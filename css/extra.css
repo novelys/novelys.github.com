@@ -1,0 +1,184 @@
+/*.snavbar {
+  color: rgba(250, 250, 250, 0.9);
+}*/
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  /*font-family: 'Ubuntu', sans-serif;*/
+}
+
+.footer {
+  /*background-color: #4c4c4c;*/
+  width: 100%;
+  /*color: rgb(250, 250, 250);*/
+  background: none repeat scroll 0 0 #2E3133;
+  color: #777E83;
+}
+
+.navbar-fixed-top .navbar-inner, .navbar-static-top .navbar-inner {
+  box-shadow: none;
+}
+
+.navbar-inner {
+  background-color: rgb(250, 250, 250);
+  background-image: none;
+}
+
+.snav {
+  position: absolute;
+  top: 16px;
+  left: 50%;
+}
+
+.snav.nav-left {
+  margin-left: -400px;
+}
+.snav.nav-right {
+  margin-left: 100px;
+}
+
+.snav ul {
+  /*margin: 0 auto;*/
+
+}
+.snav ul, ul li {
+  list-style: none;
+}
+.snav ul li {
+  float: left;
+  padding-left: 50px;
+}
+.snav ul li.current a {
+  text-decoration: underline;
+}
+
+.snav ul li a, .snav ul li a:visited {
+  color: black;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.snavbar-fixed-top .snavbar-inner, .snavbar-static-top .snavbar-inner {
+  box-shadow: none;
+}
+
+.snavbar-inner {
+  background-color: rgba(250, 250, 250, 0.9);
+  background-image: none;
+}
+
+.logo {
+  text-align: center;
+}
+
+img#logo {
+  height: 40px;
+  margin: 5px;
+}
+
+.bg {
+  position: absolute;
+  top:50px;
+  left: 0;
+  width: 100%;
+  background-image: url("/img/san-francisco-background.jpg");
+  background-size: cover;
+  height: 390px;
+}
+
+body.home .bg {
+  height: 500px;
+}
+
+#intro h1 {
+  position: absolute;
+  top: 150px;
+}
+
+#intro h4 {
+  margin-top: 280px;
+  width: 100%;
+}
+
+h1 {
+  font-weight: 700;
+  color: white;
+  background-color: rgba(23, 116, 145, 0.6);
+  padding: 10px 5px 10px 5px;
+}
+
+h4 {
+  color: white;
+  background-color: rgba(255, 154, 0, 0.6);
+  /*background-color: rgba(74, 74, 74, 0.8);*/
+  padding: 10px 5px 10px 5px;
+  font-weight: 400;
+}
+
+.address p {
+  color: white;
+  background-color: rgba(74, 74, 74, 0.8);
+  padding: 10px 5px 10px 5px;
+  font-weight: 300;
+}
+
+.address h1 {
+  position: absolute;
+  top: 80px;
+}
+
+#map-canvas {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  height: 308px;
+}
+
+.date {
+  color: white;
+  background-color: rgb(23, 116, 145);
+  padding: 7px;
+  font-size: 20px;
+  text-align: center;
+  width:60px;
+  height:60px;
+  float:right;
+}
+
+.date .month {
+  font-weight: bold;
+}
+
+.article .span6 {
+  border-left: 1px solid rgb(23, 116, 145);
+  margin-left: 0;
+  padding-left: 30px;
+}
+
+.article .span6 p:last-child {
+  margin-bottom: 0;
+}
+
+.article .title {
+  margin-top: 0;
+  line-height: 26px;
+}
+
+.separator {
+  padding: 10px 0 10px 0;
+}
+
+.date {
+  /*border-right: 1px solid rgb(23, 116, 145);  */
+}
+
+.latest_news {
+  padding: 20px;
+}
+
+.latest_news h3 {
+  font-size: 40px;
+  font-family: 'Gentium Basic', serif;
+  font-weight: normal;
+}

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <title>Novelys - Contact</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Novelys - Ruby on Rails development - Strasbourg, France">
+    <meta name="author" content="Novelys">
+
+    <!-- Le styles -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 40px;
+      }
+    </style>
+    <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,800,700,600' rel='stylesheet' type='text/css'>
+    <link href="css/extra.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
+  </head>
+
+  <body>
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <div class="logo">
+            <a href="/"><img id="logo" src="img/logo.png" alt="Novelys Logo"></a>
+          </div>
+          <div class="snav nav-left">
+            <ul>
+              <li><a href="/vision.html">Vision</a></li>
+              <li><a href="#">Work</a></li>
+            </ul>
+          </div>
+          <div class="snav nav-right">
+            <ul>
+              <li><a href="/blog.html">Blog</a></li>
+              <li class="current"><a href="/contact.html">Contact</a></li>
+            </ul>
+          </div>
+<!--           <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div> -->
+        </div>
+      </div>
+    </div>
+
+    <div id="intro" class="bg">
+      <div class="container">
+        <h1>Contact</h1>
+      </div>
+    </div>
+
+    <div class="container" style="margin-top:430px;">
+      <div class="row">
+        <div class="span6">
+          <p style="text-align:right;">
+            Novelys SARL
+            <br/>
+            15 avenue du Rhin
+            <br/>
+            67000 STRASBOURG
+            <br/>
+            FRANCE
+            <br/>
+            tel: +33 (0)6 75 20 41 30
+            <br/>
+            mail: <a href="mailto:contact@novelys.com"><strong>contact@novelys.com</strong></a>
+            <br/>
+            SARL au capital de 1.500€
+            <br/>
+            RCS Strasbourg: 483 910 899
+            <br/>
+            APE: 6202A
+            <br/>
+            N°Intra.:FR57483910899
+          </p>
+        </div>
+        <div class="span6">
+          <div id="map-canvas"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+    <script>
+      var map;
+      var center;
+      function initialize() {
+        var mapOptions = {
+          zoom: 14,
+          center: new google.maps.LatLng(48.599123,7.587081),
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+        map = new google.maps.Map(document.getElementById('map-canvas'),
+            mapOptions);
+        function calculateCenter() {
+          center = map.getCenter();
+        }
+        google.maps.event.addDomListener(map, 'idle', function() {
+          calculateCenter();
+        });
+        google.maps.event.addDomListener(window, 'resize', function() {
+          map.setCenter(center);
+        });
+      }
+
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+  </body>
+</html>
