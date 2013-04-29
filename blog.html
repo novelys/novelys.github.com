@@ -1,147 +1,73 @@
-<!DOCTYPE html>
-<html lang="fr">
-  <head>
-    <meta charset="utf-8">
-    <title>Novelys - Blog - News from the trenches.</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Novelys - Ruby on Rails development - Strasbourg, France">
-    <meta name="author" content="Novelys">
-
-    <!-- Le styles -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <style type="text/css">
-      body {
-        padding-top: 40px;
-      }
-    </style>
-    <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,800,700,600' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Ubuntu:400,500,700' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Gentium+Basic:400italic' rel='stylesheet' type='text/css'>
-    <link href="css/extra.css" rel="stylesheet">
-
-    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-    <!-- Le fav and touch icons -->
-    <link rel="shortcut icon" href="favicon.ico">
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
-  </head>
-
-  <body class="home">
-    <div class="navbar navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <div class="logo">
-            <a href="/"><img id="logo" src="img/logo.png" alt="Novelys Logo"></a>
-          </div>
-          <div class="snav nav-left">
-            <ul>
-              <li><a href="/vision.html">Vision</a></li>
-              <li><a href="#">Work</a></li>
-            </ul>
-          </div>
-          <div class="snav nav-right">
-            <ul>
-              <li class="current"><a href="/blog.html">Blog</a></li>
-              <li><a href="/contact.html">Contact</a></li>
-            </ul>
-          </div>
-<!--           <div class="nav-collapse collapse">
-            <ul class="nav">
-              <li class="active"><a href="#">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-          </div> -->
+---
+layout: default
+title: "Blog"
+---
+<div class="container" style="margin-top:20px;">
+  <div class="row latest_news">
+    <div class="span3">
+    </div>
+    <div class="span6" style="margin-left:8px;">
+      <h3>News from the trenches...</h3>
+    </div>
+  </div>
+  <div class="row article">
+    <div class="span4">
+      <div class="date">
+        <div class="day">
+          31
+        </div>
+        <div class="month">
+          MAR
+        </div>
+        <div class="year">
+          2013
         </div>
       </div>
     </div>
-
-    <div class="container" style="margin-top:20px;">      
-      <div class="row latest_news">
-        <div class="span3">
+    <div class="span6">
+      <h2 class="title">
+        Un super titre d'article
+      </h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin et eros vitae dolor porttitor suscipit. Praesent ipsum odio, ullamcorper ac volutpat ut, sagittis ac magna. Sed erat orci, dictum quis rutrum a, faucibus vitae tortor. Nam scelerisque tellus sed mi consectetur dapibus. Phasellus blandit aliquam vulputate. Integer molestie varius lectus, non faucibus nisi consequat eu. Cras lectus felis, elementum ac tristique et, hendrerit id dolor.
+      </p>
+      <p>
+        Nullam mi enim, malesuada tincidunt vehicula vitae, feugiat non odio. Suspendisse suscipit, quam eu placerat ullamcorper, quam erat vulputate risus, vel vestibulum odio mi in sapien. Proin in felis ligula. Phasellus adipiscing molestie est, non dapibus magna sagittis sed. Donec libero tortor, gravida at congue porttitor, sagittis sit amet enim. Pellentesque elit arcu, rhoncus et suscipit vel, euismod id massa. Aliquam erat volutpat. Praesent eget eros et quam tempor porta suscipit a mi. Nulla iaculis lacus nulla. Fusce auctor volutpat metus, eu venenatis ligula pharetra sodales. Donec mollis aliquam ipsum at tincidunt.
+      </p>
+    </div>
+  </div>
+  <div class="row separator">
+    <div class="span4"></div>
+    <div class="span6">
+      <hr/>
+    </div>
+  </div>
+  <div class="row article">
+    <div class="span4">
+      <div class="date">
+        <div class="day">
+          20
         </div>
-        <div class="span6" style="margin-left:8px;">
-          <h3>News from the trenches...</h3>
+        <div class="month">
+          MAR
         </div>
-      </div>
-      <div class="row article">
-        <div class="span4">
-          <div class="date">
-            <div class="day">
-              31
-            </div>
-            <div class="month">
-              MAR
-            </div>
-            <div class="year">
-              2013
-            </div>
-          </div>
-        </div>
-        <div class="span6">
-          <h2 class="title">
-            Un super titre d'article
-          </h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin et eros vitae dolor porttitor suscipit. Praesent ipsum odio, ullamcorper ac volutpat ut, sagittis ac magna. Sed erat orci, dictum quis rutrum a, faucibus vitae tortor. Nam scelerisque tellus sed mi consectetur dapibus. Phasellus blandit aliquam vulputate. Integer molestie varius lectus, non faucibus nisi consequat eu. Cras lectus felis, elementum ac tristique et, hendrerit id dolor.
-          </p>
-          <p>
-            Nullam mi enim, malesuada tincidunt vehicula vitae, feugiat non odio. Suspendisse suscipit, quam eu placerat ullamcorper, quam erat vulputate risus, vel vestibulum odio mi in sapien. Proin in felis ligula. Phasellus adipiscing molestie est, non dapibus magna sagittis sed. Donec libero tortor, gravida at congue porttitor, sagittis sit amet enim. Pellentesque elit arcu, rhoncus et suscipit vel, euismod id massa. Aliquam erat volutpat. Praesent eget eros et quam tempor porta suscipit a mi. Nulla iaculis lacus nulla. Fusce auctor volutpat metus, eu venenatis ligula pharetra sodales. Donec mollis aliquam ipsum at tincidunt.
-          </p>
-        </div>
-      </div>
-      <div class="row separator">
-        <div class="span4"></div>
-        <div class="span6">
-          <hr/>
-        </div>
-      </div>
-      <div class="row article">
-        <div class="span4">
-          <div class="date">
-            <div class="day">
-              20
-            </div>
-            <div class="month">
-              MAR
-            </div>
-            <div class="year">
-              2013
-            </div>
-          </div>
-        </div>
-        <div class="span6">
-          <h2 class="title">
-            Un super titre d'article
-          </h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin et eros vitae dolor porttitor suscipit. Praesent ipsum odio, ullamcorper ac volutpat ut, sagittis ac magna. Sed erat orci, dictum quis rutrum a, faucibus vitae tortor. Nam scelerisque tellus sed mi consectetur dapibus. Phasellus blandit aliquam vulputate. Integer molestie varius lectus, non faucibus nisi consequat eu. Cras lectus felis, elementum ac tristique et, hendrerit id dolor.
-          </p>
-          <p>
-            Nullam mi enim, malesuada tincidunt vehicula vitae, feugiat non odio. Suspendisse suscipit, quam eu placerat ullamcorper, quam erat vulputate risus, vel vestibulum odio mi in sapien. Proin in felis ligula. Phasellus adipiscing molestie est, non dapibus magna sagittis sed. Donec libero tortor, gravida at congue porttitor, sagittis sit amet enim. Pellentesque elit arcu, rhoncus et suscipit vel, euismod id massa. Aliquam erat volutpat. Praesent eget eros et quam tempor porta suscipit a mi. Nulla iaculis lacus nulla. Fusce auctor volutpat metus, eu venenatis ligula pharetra sodales. Donec mollis aliquam ipsum at tincidunt.
-          </p>
+        <div class="year">
+          2013
         </div>
       </div>
     </div>
-    <div class="footer">
-      <div class="container">
-        <div class="row">
-          <div class="span12">
-            <ul>
-              <li>Facebook</li>
-              <li>Twitter</li>
-              <li>Slideshare</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-   </div>
-  </body>
-</html>
+    <div class="span6">
+      <h2 class="title">
+        Un super titre d'article
+      </h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin et eros vitae dolor porttitor suscipit. Praesent ipsum odio, ullamcorper ac volutpat ut, sagittis ac magna. Sed erat orci, dictum quis rutrum a, faucibus vitae tortor. Nam scelerisque tellus sed mi consectetur dapibus. Phasellus blandit aliquam vulputate. Integer molestie varius lectus, non faucibus nisi consequat eu. Cras lectus felis, elementum ac tristique et, hendrerit id dolor.
+      </p>
+      <p>
+        Nullam mi enim, malesuada tincidunt vehicula vitae, feugiat non odio. Suspendisse suscipit, quam eu placerat ullamcorper, quam erat vulputate risus, vel vestibulum odio mi in sapien. Proin in felis ligula. Phasellus adipiscing molestie est, non dapibus magna sagittis sed. Donec libero tortor, gravida at congue porttitor, sagittis sit amet enim. Pellentesque elit arcu, rhoncus et suscipit vel, euismod id massa. Aliquam erat volutpat. Praesent eget eros et quam tempor porta suscipit a mi. Nulla iaculis lacus nulla. Fusce auctor volutpat metus, eu venenatis ligula pharetra sodales. Donec mollis aliquam ipsum at tincidunt.
+      </p>
+    </div>
+  </div>
+</div>
+
+

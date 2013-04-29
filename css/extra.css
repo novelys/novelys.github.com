@@ -5,6 +5,7 @@
 body {
   font-family: 'Open Sans', sans-serif;
   /*font-family: 'Ubuntu', sans-serif;*/
+  /*font-family: 'Varela Round', sans-serif;*/
 }
 
 .footer {
@@ -84,36 +85,63 @@ img#logo {
   width: 100%;
   background-image: url("/img/san-francisco-background.jpg");
   background-size: cover;
+  background-attachment: fixed;
   height: 390px;
 }
 
-body.home .bg {
-  height: 500px;
-}
+#intro .container {
+/*  position: relative;
+  height: 100%;
+*/}
 
-#intro h1 {
+#title {
   position: absolute;
-  top: 150px;
+  top: 40%;
+  padding: 0;
+  margin: 0;
 }
 
-#intro h4 {
-  margin-top: 280px;
-  width: 100%;
-}
-
-h1 {
+#title p.subs {
+  margin: 0;
+  padding: 0;
+  display: inline;
+  font-family: "proxima-nova",sans-serif;
   font-weight: 700;
+  font-style: normal;
+  box-shadow: 6px 0 0 0 rgba(23, 116, 145, 0.6), -6px 0 0 0 rgba(23, 116, 145, 0.6);
+  white-space: pre-line; /* Not understood by IE, use manual br for IE */
   color: white;
-  background-color: rgba(23, 116, 145, 0.6);
-  padding: 10px 5px 10px 5px;
+  background: rgba(23, 116, 145, 0.6);
+  font-size: 46px;
+  line-height: normal;
 }
 
-h4 {
-  color: white;
-  background-color: rgba(255, 154, 0, 0.6);
-  /*background-color: rgba(74, 74, 74, 0.8);*/
-  padding: 10px 5px 10px 5px;
+
+#subtitle {
+  position: absolute;
+  top: 60%;
+  padding: 0;
+  margin: 0;
+}
+
+#subtitle p.subs {
+  margin: 0;
+  padding: 0;
+  display: inline;
+  font-family: "proxima-nova",sans-serif;
   font-weight: 400;
+  font-style: normal;
+  box-shadow: 6px 0 0 0 rgba(255, 154, 0, 0.6), -6px 0 0 0 rgba(255, 154, 0, 0.6);
+  white-space: pre-line; /* Not understood by IE, use manual br for IE */
+  color: white;
+  background: rgba(255, 154, 0, 0.6);
+  font-size: 25px;
+  line-height: normal;
+}
+
+#title, #subtitle {
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .address p {
@@ -179,6 +207,66 @@ h4 {
 
 .latest_news h3 {
   font-size: 40px;
-  font-family: 'Gentium Basic', serif;
-  font-weight: normal;
+  font-family: 'proxima-nova', sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+@media (max-width: 979px) {
+  img#logo {
+    margin-top: 0;
+  }
+}
+
+
+@media (max-width: 767px) {
+
+  body {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .navbar-fixed-top .navbar-inner, .navbar-fixed-bottom .navbar-inner {
+    padding-bottom: 20px;
+  }
+
+  .navbar-fixed-top {
+    margin-bottom: 0;
+  }
+
+  .snav {
+    position: static;
+    float: left;
+    padding-top: 20px;
+  }
+
+  .snav.nav-left {
+    margin-left: 0;
+    width: 100%;
+  }
+  .snav.nav-right {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .snav ul {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+
+  .snav ul li {
+    padding-left: 0;
+    width: 50%;
+  }
+
+  body.home .bg {
+    top: 155px;
+    height: 400px;
+  }
+
+  #title {
+    top: 30%;
+  }
+
 }
