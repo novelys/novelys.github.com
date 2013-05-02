@@ -508,6 +508,11 @@ footer .social li a:hover {
     margin-left: 30px;
   }
 
+  footer .span6 {
+    width:310px;
+    margin:0 auto;
+  }
+
   .cubes {
     display: none;
   }
