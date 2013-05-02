@@ -66,14 +66,65 @@ body {
   /*font-family: 'Varela Round', sans-serif;*/
   font-family: 'proxima-nova', sans-serif;
   font-weight: 300;
+  background-color: #FAFAFA;
+  font-size: 16px;
 }
 
-.footer {
+a, a:hover, a:visited {
+  color: #177491;
+  font-weight: 400;
+}
+
+.cursive {
+ font-family: "bickham-script-pro", sans-serif;
+ font-weight: 400;
+ font-size: 70px;
+ text-align: center;
+ margin-top: 20px;
+}
+
+.cursive .cubes {
+  font-size: 40px;
+}
+
+.trenches {
+  background-color: #F3F3F3;
+  padding: 20px 0;
+}
+
+h1 {
+  font-weight: 200;
+}
+
+body:not(.home) footer {
+  margin-top: 20px;
+}
+
+footer {
   /*background-color: #4c4c4c;*/
   width: 100%;
   /*color: rgb(250, 250, 250);*/
   background: none repeat scroll 0 0 #2E3133;
   /*color: #777E83;*/
+  color: white;
+  font-weight: 300;
+}
+
+footer .cursive {
+  font-family: "reklame-script", sans-serif;
+  text-align: left;
+  margin: 0;
+  padding: 20px 0;
+  font-size: 50px;
+}
+
+footer .pull-right .cursive {
+  padding-top: 0px;
+  margin-top: 35px;
+  text-align: center;
+}
+
+footer a, footer a:hover, footer a:visited {
   color: white;
 }
 
@@ -116,8 +167,8 @@ body {
 
 .snav ul li a, .snav ul li a:visited {
   color: black;
-  font-weight: 300;
-  font-size: 18px;
+  font-weight: 200;
+  font-size: 20px;
   line-height: 20px;
 }
 
@@ -157,7 +208,7 @@ img#logo {
 
 #title {
   position: absolute;
-  top: 40%;
+  top: 30%;
   padding: 0;
   margin: 0;
 }
@@ -167,13 +218,13 @@ img#logo {
   padding: 0;
   display: inline;
   font-family: "proxima-nova",sans-serif;
-  font-weight: 700;
+  font-weight: 200;
   font-style: normal;
   box-shadow: 6px 0 0 0 rgba(23, 116, 145, 0.6), -6px 0 0 0 rgba(23, 116, 145, 0.6);
   white-space: pre-line; /* Not understood by IE, use manual br for IE */
   color: white;
   background: rgba(23, 116, 145, 0.6);
-  font-size: 46px;
+  font-size: 70px;
   line-height: normal;
 }
 
@@ -190,18 +241,18 @@ img#logo {
   padding: 0;
   display: inline;
   font-family: "proxima-nova",sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   font-style: normal;
   box-shadow: 6px 0 0 0 rgba(255, 154, 0, 0.6), -6px 0 0 0 rgba(255, 154, 0, 0.6);
   white-space: pre-line; /* Not understood by IE, use manual br for IE */
   color: white;
   background: rgba(255, 154, 0, 0.6);
-  font-size: 25px;
+  font-size: 40px;
   line-height: normal;
 }
 
 #title, #subtitle {
-  margin-left: 20px;
+  /*margin-left: 20px;*/
   margin-right: 20px;
 }
 
@@ -273,34 +324,44 @@ img#logo {
   font-style: italic;
 }
 
-.footer {
-  margin-top: 20px;
+footer .contact {
+  margin: 0;
 }
 
-.footer .contact li {
+footer .contact li {
   margin: 15px 20px 15px 0;
 }
 
-.footer .contact a {
+footer .contact li .icon {
+  width: 34px;
+  text-align: center;
+}
+
+}
+footer .contact a {
   color: white;
 }
 
-.footer .contact {
+footer .contact {
   font-size: 18px;
   line-height: 20px;
 }
 
-.footer .social {
-    list-style: none;
-    margin: 0;
-  }
+footer .social {
+  list-style: none;
+  margin: 10px 0 0;
+}
 
-.footer .social li {
+footer .social li {
     float: left;
-    margin: 20px 20px 20px 0;
+    margin: 0 20px 20px 0;
   }
 
-.footer .social li .rounded {
+footer .social li:last-child {
+  margin-right: 0;
+}
+
+footer .social li .rounded {
     height: 50px;
     width: 50px;
     -moz-border-radius: 25px;
@@ -309,27 +370,43 @@ img#logo {
     color: #282828;
   }
 
-.footer .social li .rounded span {
+footer .social li .rounded span {
     font-size: 30px;
     position: relative;
   }
-.footer .social li .rounded.facebook span {
+footer .social li .rounded.facebook span {
     top: 10px;
     left: 18px;
   }
-.footer .social li .rounded.twitter span {
+footer .social li .rounded.twitter span {
     top: 10px;
     left: 10px;
   }
-.footer .social li .rounded.facebook:hover {
+footer .social li .rounded.github span {
+    top: 10px;
+    left: 12px;
+  }
+footer .social li .rounded.slideshare span {
+    top: 10px;
+    left: 12px;
+  }
+footer .social li .rounded.facebook:hover {
     background-color: #3B5998;
     color: white;
   }
-.footer .social li .rounded.twitter:hover {
+footer .social li .rounded.twitter:hover {
     background-color: #4099FF;
     color: white;
   }
-.footer .social li a:hover {
+footer .social li .rounded.github:hover {
+    background-color: #FAFAFA;
+    color: black;
+  }
+footer .social li .rounded.slideshare:hover {
+    background-color: #FAFAFA;
+    color: black;
+  }
+footer .social li a:hover {
     text-decoration: none;
   }
 
@@ -387,7 +464,33 @@ img#logo {
   }
 
   #title {
-    top: 30%;
+    top: 20%;
+  }
+
+  #title p.subs {
+    font-size: 40px;
+  }
+
+  #subtitle p.subs {
+    font-size: 22px;
+  }
+
+  footer .pull-right {
+    float:left;
+  }
+
+  footer .pull-right .cursive {
+    text-align: left;
+    margin-left: 30px;
+  }
+
+  .cubes {
+    display: none;
+  }
+
+  .cursive {
+    font-size: 60px;
+    line-height: 60px;
   }
 
 }
