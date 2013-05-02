@@ -224,7 +224,7 @@ img#logo {
   white-space: pre-line; /* Not understood by IE, use manual br for IE */
   color: white;
   background: rgba(23, 116, 145, 0.6);
-  font-size: 70px;
+  font-size: 50px;
   line-height: normal;
 }
 
@@ -247,7 +247,7 @@ img#logo {
   white-space: pre-line; /* Not understood by IE, use manual br for IE */
   color: white;
   background: rgba(255, 154, 0, 0.6);
-  font-size: 40px;
+  font-size: 28px;
   line-height: normal;
 }
 
@@ -416,6 +416,17 @@ footer .social li a:hover {
   }
 }
 
+@media (min-width: 1200px) {
+
+  #title p.subs {
+    font-size: 70px;
+  }
+
+  #subtitle p.subs {
+    font-size: 40px;
+  }
+
+}
 
 @media (max-width: 767px) {
 
@@ -429,7 +440,7 @@ footer .social li a:hover {
   }
 
   .navbar-fixed-top {
-    margin-bottom: 0;
+    margin: 0;
   }
 
   .snav {
@@ -475,8 +486,21 @@ footer .social li a:hover {
     font-size: 22px;
   }
 
+  #title, #subtitle {
+    margin: 0 10px;
+  }
+
+  section.content {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
   footer .pull-right {
     float:left;
+  }
+
+  footer .pull-right ul {
+    margin-left: 5px;
   }
 
   footer .pull-right .cursive {
