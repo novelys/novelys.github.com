@@ -588,8 +588,17 @@ footer .social li a:hover {
 
   .blog .date {
     float: left;
-    margin-left: 30px;
     margin-right: 10px;
+  }
+
+  article.row {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  article .span6 {
+    padding-left: 0;
+    border-left: 0;
   }
 
 }
