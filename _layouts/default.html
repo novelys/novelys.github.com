@@ -45,13 +45,13 @@
             <a href="/"><img id="logo" src="img/logo.png" alt="Novelys Logo"></a>
           </div>
           <div class="snav nav-left">
-            <ul>
+            <ul class="unstyled">
               <li><a href="/vision.html">Vision</a></li>
               <li><a href="#">Work</a></li>
             </ul>
           </div>
           <div class="snav nav-right">
-            <ul>
+            <ul class="unstyled">
               <li><a href="/blog.html">Blog</a></li>
               <li><a href="/contact.html">Contact</a></li>
             </ul>
@@ -67,7 +67,7 @@
         <div class="row">
           <div class="span6">
             <div class="pull-left">
-              <ul class="contact">
+              <ul class="unstyled contact">
                 <li class="clearfix">
                   <div class="pull-left icon">&nbsp;</div>
                   <div class="pull-left"><div class="cursive">Contact us!</div></div>
@@ -134,7 +134,8 @@
   <script type="text/javascript">
   function computeBackgroundHeight() {
     var height = $(window).height();
-    $(".bg").css({height: height - 50 - 100});
+    height = height > 500 ? height : 500;
+    $(".targetresize").css({height: height - 50 - 100});
     $(".content").css({marginTop: height - 50 - 100 + 10});
   }
   $(document).ready(function(event) {

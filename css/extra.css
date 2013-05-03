@@ -84,12 +84,44 @@ a, a:hover, a:visited {
 }
 
 .cursive .cubes {
-  font-size: 40px;
+  font-size: 30px;
 }
 
-.trenches {
+.trenches, .portfolio {
   background-color: #F3F3F3;
   padding: 20px 0;
+}
+
+body.home .trenches .date {
+  width: 100px;
+}
+
+body.home .trenches .dot {
+  padding-right: 10px;
+}
+
+body.home ul.thumbnails {
+  margin-left: 0;
+}
+
+body.home ul.thumbnails a.thumbnail {
+  margin: 5px;
+}
+
+body.blog .trenches {
+  margin-bottom: 40px;
+}
+
+body.blog .trenches .span4 .cursive {
+  text-align: right;
+}
+
+body.blog .trenches .span8 {
+  margin-left: 0;
+}
+
+body.blog .trenches .span8 .cursive {
+  text-align: left;
 }
 
 h1 {
@@ -154,9 +186,6 @@ footer a, footer a:hover, footer a:visited {
   /*margin: 0 auto;*/
 
 }
-.snav ul, ul li {
-  list-style: none;
-}
 .snav ul li {
   float: left;
   padding-left: 50px;
@@ -199,6 +228,10 @@ img#logo {
   background-size: cover;
   background-attachment: fixed;
   height: 390px;
+}
+
+#intro .span12.targetresize {
+  position: relative;
 }
 
 #intro .container {
@@ -275,7 +308,7 @@ img#logo {
   height: 308px;
 }
 
-.date {
+.blog .date {
   color: white;
   background-color: rgb(23, 116, 145);
   padding: 7px;
@@ -286,30 +319,36 @@ img#logo {
   float:right;
 }
 
-.date .month {
+.blog .date .month {
   font-weight: bold;
+  text-transform: uppercase;
 }
 
-.article .span6 {
+article .span6 {
   border-left: 1px solid rgb(23, 116, 145);
   margin-left: 0;
   padding-left: 30px;
 }
 
-.article .span6 p:last-child {
+article .span6 p:last-child {
   margin-bottom: 0;
 }
 
-.article .title {
+article .title {
   margin-top: 0;
   line-height: 26px;
+}
+
+article img {
+  padding: 10px 0;
+  margin: 0 auto;
 }
 
 .separator {
   padding: 10px 0 10px 0;
 }
 
-.date {
+.blog .date {
   /*border-right: 1px solid rgb(23, 116, 145);  */
 }
 
@@ -416,14 +455,22 @@ footer .social li a:hover {
   }
 }
 
+@media (min-width: 768px) {
+
+  body.home ul.thumbnails a.thumbnail:hover {
+    margin: 0;
+  }
+
+}
+
 @media (min-width: 1200px) {
 
   #title p.subs {
-    font-size: 70px;
+    font-size: 60px;
   }
 
   #subtitle p.subs {
-    font-size: 40px;
+    font-size: 34px;
   }
 
 }
@@ -433,6 +480,14 @@ footer .social li a:hover {
   body {
     padding-left: 0;
     padding-right: 0;
+  }
+
+  body.home ul.thumbnails a.thumbnail {
+    margin: 10px;
+  }
+
+  .portfolio h1 {
+    margin-left: 10px;
   }
 
   .navbar-fixed-top .navbar-inner, .navbar-fixed-bottom .navbar-inner {
@@ -471,7 +526,8 @@ footer .social li a:hover {
 
   body.home .bg {
     top: 155px;
-    height: 400px;
+    height: 351px;
+    min-height: 351px;
   }
 
   #title {
@@ -517,9 +573,23 @@ footer .social li a:hover {
     display: none;
   }
 
+  body.blog .trenches .span4 {
+    display: none;
+  }
+
+  body.blog .trenches .span8 .cursive {
+    text-align: center;
+  }
+
   .cursive {
     font-size: 60px;
     line-height: 60px;
+  }
+
+  .blog .date {
+    float: left;
+    margin-left: 30px;
+    margin-right: 10px;
   }
 
 }

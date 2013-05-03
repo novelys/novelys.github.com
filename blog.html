@@ -1,78 +1,50 @@
 ---
 layout: default
 title: "Blog"
+body_class: "blog"
 ---
 <section class="trenches">
   <div class="container">
     <div class="row">
       <div class="span4">
-        <h1 class="cursive" style="text-align:right;"><span class="cubes">★☆★</span> </h1>
+        <h1 class="cursive"><span class="cubes">★☆★</span> </h1>
       </div>
-      <div class="span8" style="margin-left:0;">
-        <h1 class="cursive" style="text-align:left;">Latest news from the trenches <span class="cubes">★☆★</span></h1>
+      <div class="span8">
+        <h1 class="cursive">Latest news from the trenches <span class="cubes">★☆★</span></h1>
       </div>
     </div>
   </div>
 </section>
 <section>
   <div class="container">
-  <div class="row article">
+  {% for post in site.posts %}
+  <article class="row">
     <div class="span4">
       <div class="date">
         <div class="day">
-          31
+          {{ post.date | date: "%d" }}
         </div>
         <div class="month">
-          MAR
+          {{ post.date | date: "%b" }}
         </div>
         <div class="year">
-          2013
+          {{ post.date | date: "%Y" }}
         </div>
       </div>
     </div>
     <div class="span6">
       <h2 class="title">
-        Un super titre d'article
+        {{ post.title }}
       </h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin et eros vitae dolor porttitor suscipit. Praesent ipsum odio, ullamcorper ac volutpat ut, sagittis ac magna. Sed erat orci, dictum quis rutrum a, faucibus vitae tortor. Nam scelerisque tellus sed mi consectetur dapibus. Phasellus blandit aliquam vulputate. Integer molestie varius lectus, non faucibus nisi consequat eu. Cras lectus felis, elementum ac tristique et, hendrerit id dolor.
-      </p>
-      <p>
-        Nullam mi enim, malesuada tincidunt vehicula vitae, feugiat non odio. Suspendisse suscipit, quam eu placerat ullamcorper, quam erat vulputate risus, vel vestibulum odio mi in sapien. Proin in felis ligula. Phasellus adipiscing molestie est, non dapibus magna sagittis sed. Donec libero tortor, gravida at congue porttitor, sagittis sit amet enim. Pellentesque elit arcu, rhoncus et suscipit vel, euismod id massa. Aliquam erat volutpat. Praesent eget eros et quam tempor porta suscipit a mi. Nulla iaculis lacus nulla. Fusce auctor volutpat metus, eu venenatis ligula pharetra sodales. Donec mollis aliquam ipsum at tincidunt.
-      </p>
+      {{ post.content }}
     </div>
-  </div>
+  </article>
   <div class="row separator">
     <div class="span4"></div>
     <div class="span6">
       <hr/>
     </div>
   </div>
-  <div class="row article">
-    <div class="span4">
-      <div class="date">
-        <div class="day">
-          20
-        </div>
-        <div class="month">
-          MAR
-        </div>
-        <div class="year">
-          2013
-        </div>
-      </div>
-    </div>
-    <div class="span6">
-      <h2 class="title">
-        Un super titre d'article
-      </h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin et eros vitae dolor porttitor suscipit. Praesent ipsum odio, ullamcorper ac volutpat ut, sagittis ac magna. Sed erat orci, dictum quis rutrum a, faucibus vitae tortor. Nam scelerisque tellus sed mi consectetur dapibus. Phasellus blandit aliquam vulputate. Integer molestie varius lectus, non faucibus nisi consequat eu. Cras lectus felis, elementum ac tristique et, hendrerit id dolor.
-      </p>
-      <p>
-        Nullam mi enim, malesuada tincidunt vehicula vitae, feugiat non odio. Suspendisse suscipit, quam eu placerat ullamcorper, quam erat vulputate risus, vel vestibulum odio mi in sapien. Proin in felis ligula. Phasellus adipiscing molestie est, non dapibus magna sagittis sed. Donec libero tortor, gravida at congue porttitor, sagittis sit amet enim. Pellentesque elit arcu, rhoncus et suscipit vel, euismod id massa. Aliquam erat volutpat. Praesent eget eros et quam tempor porta suscipit a mi. Nulla iaculis lacus nulla. Fusce auctor volutpat metus, eu venenatis ligula pharetra sodales. Donec mollis aliquam ipsum at tincidunt.
-      </p>
-    </div>
-  </div>
+  {% endfor %}
 </div>
 </section>

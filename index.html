@@ -3,19 +3,21 @@ layout: default
 title: "We make web & mobile apps."
 body_class: "home"
 ---
-<div id="intro" class="bg">
+<section id="intro" class="bg targetresize">
   <div class="container">
+    <div class="row">
+      <div class="span12 targetresize">
+        <div id="title">
+          <p class="subs"><span>We make web & mobile apps.</span></p>
+        </div>
 
-    <div id="title">
-      <p class="subs"><span>We make web & mobile apps.</span></p>
+        <div id="subtitle">
+          <p class="subs"><span>We are a small <strong>team</strong> of software engineers crafting innovative <strong>web</strong> & <strong>mobile</strong> applications since 2005.</span></p>
+        </div>
+      </div>
     </div>
-
-    <div id="subtitle">
-      <p class="subs"><span>We are a small <strong>team</strong> of software engineers crafting innovative <strong>web</strong> & <strong>mobile</strong> applications since 2005.</span></p>
-    </div>
-
   </div>
-</div>
+</section>
 <section class="content">
   <div class="container">
     <div class="row">
@@ -44,12 +46,68 @@ body_class: "home"
     </div>
   </div>
 </section>
-<section class="trenches">
+<!-- <section class="trenches">
   <div class="container">
     <div class="row">
       <div class="span12">
         <h1 class="cursive"><span class="cubes">★☆★</span> Latest news from the trenches <span class="cubes">★☆★</span></h1>
       </div>
+    </div>
+    <div class="row">
+      <div class="span12">
+        <ul class="unstyled">
+          {% for post in site.posts %}
+          <li class="clearfix">
+            <div class="date pull-left">{{ post.date | date_to_string }}</div>
+            <div class="pull-left dot"> • </div>
+            <div class="pull-left">{{ post.title }} <a class="more" href="{{ post.url }}">more</a></div>
+          </li>
+          {% endfor %}
+        </ul>
+      </span>
+    </div>
+  </div>
+</section> -->
+<section class="portfolio">
+  <div class="container">
+    <div class="row">
+      <div class="span12">
+        <h1>Our latest work</h1>
+      </div>
+    </div>
+    <div class="row">
+      <ul class="thumbnails">
+        <li class="span3">
+          <a href="" class="thumbnail">
+            <img src="/img/home/arte.png" />
+          </a>
+        </li>
+        <li class="span3">
+          <a href="" class="thumbnail">
+            <img src="/img/home/abcalsace.png" />
+          </a>
+        </li>
+        <li class="span3">
+          <a href="" class="thumbnail">
+            <img src="/img/home/bestofphotos.png" />
+          </a>
+        </li>
+        <li class="span3">
+          <a href="" class="thumbnail">
+            <img src="/img/home/parkingstrasbourg.png" />
+          </a>
+        </li>
+        <li class="span3">
+          <a href="" class="thumbnail">
+            <img src="/img/home/ecologieshop.png" />
+          </a>
+        </li>
+        <li class="span3">
+          <a href="" class="thumbnail">
+            <img src="/img/home/thesphere.png" />
+          </a>
+        </li>
+      </ul>
     </div>
   </div>
 </section>
