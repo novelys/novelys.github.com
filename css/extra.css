@@ -106,7 +106,14 @@ body.home ul.thumbnails {
 
 body.home ul.thumbnails a.thumbnail {
   margin: 5px;
+  background-color: #DDDDDD;
 }
+
+body.home ul.thumbnails a.thumbnail:hover, body.home ul.thumbnails a.thumbnail:focus {
+  border-color: #DDDDDD;
+  /*box-shadow: none;*/
+}
+
 
 body.blog .trenches {
   margin-bottom: 40px;
