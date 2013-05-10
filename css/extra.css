@@ -189,9 +189,8 @@ footer a, footer a:hover, footer a:visited {
   margin-left: 100px;
 }
 
-.snav ul {
-  /*margin: 0 auto;*/
-
+.snav ul.unstyled {
+  margin: 0 0 10px 25px;
 }
 .snav ul li {
   float: left;
