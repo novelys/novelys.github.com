@@ -431,7 +431,7 @@ footer .social {
     .snav.nav-left, .snav.nav-right {
       margin-left: 0;
       width: 100%; }
-    .snav ul {
+    .snav ul, .snav ul.unstyled  {
       padding: 0;
       margin: 0;
       text-align: center; }
