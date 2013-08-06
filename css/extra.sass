@@ -1,0 +1,475 @@
+body
+  font-family: 'proxima-nova', sans-serif
+  font-weight: 300
+  background-color: #FAFAFA
+  font-size: 16px
+
+a
+  color: #177491
+  font-weight: 400
+  &:hover, &:visited
+    color: #177491
+    font-weight: 400
+
+.cursive
+  font-family: "bickham-script-pro", sans-serif
+  font-weight: 400
+  font-size: 70px
+  text-align: center
+  margin-top: 20px
+  .cubes
+    font-size: 30px
+
+.trenches, .portfolio
+  background-color: #F3F3F3
+  padding: 20px 0
+
+body
+  &.home
+    .trenches
+      .date
+        width: 100px
+      .dot
+        padding-right: 10px
+    ul.thumbnails
+      margin-left: 0
+      a.thumbnail
+        margin: 5px
+        background-color: #DDDDDD
+        &:hover, &:focus
+          border-color: #DDDDDD
+          text-decoration: none
+      h3
+        font-size: 18px
+        line-height: 20px
+        color: #333333
+        text-decoration: none
+        margin: 5px 0 0 0
+        &:hover
+          font-size: 18px
+          line-height: 20px
+          color: #333333
+          text-decoration: none
+          margin: 5px 0 0 0
+      p
+        color: #333333
+        text-decoration: none
+        margin: 0
+        font-weight: 300
+        &:hover
+          color: #333333
+          text-decoration: none
+          margin: 0
+          font-weight: 300
+  &.blog .trenches
+    margin-bottom: 40px
+    .span4 .cursive
+      text-align: right
+    .span8
+      margin-left: 0
+      .cursive
+        text-align: left
+  &.contact, &.portfolio, &.vision
+    .content
+      margin-top: 430px
+      .container .row .addressblock p
+        text-align: right
+    .bg h1
+      text-align: right
+      color: white
+      margin-top: 150px
+  &.portfolio
+    .row
+      margin-bottom: 20px
+  &.portfolio_detail
+    section
+      padding: 20px 0
+      &.project_name
+        margin-top: 100px
+      &.project_description
+        background-color: #F3F3F3
+        padding: 40px 0 100px 0
+      &.realcontent
+        .row
+          margin-bottom: 40px
+        strong.intro
+          margin: 10px 0
+          display: block
+        .timeframe
+          font-style: italic
+          margin-bottom: 20px
+        img.intro
+          margin-top: -80px
+        a.featured
+          margin: 20px 0
+          display: block
+        a.navigation, a.navigation:hover, a.navigation:visited
+          color: #333333
+          text-decoration: none
+h1
+  font-weight: 200
+
+body:not(.home) footer
+  margin-top: 20px
+
+footer
+  width: 100%
+  background: none repeat scroll 0 0 #2E3133
+  color: white
+  font-weight: 300
+  .cursive
+    font-family: "reklame-script", sans-serif
+    text-align: left
+    margin: 0
+    padding: 20px 0
+    font-size: 50px
+  .pull-right .cursive
+    padding-top: 0px
+    margin-top: 35px
+    text-align: center
+  a
+    color: white
+    &:hover, &:visited
+      color: white
+
+.navbar-fixed-top .navbar-inner, .navbar-static-top .navbar-inner
+  box-shadow: none
+
+.navbar-inner
+  background-color: rgb(250, 250, 250)
+  background-image: none
+
+.snav
+  position: absolute
+  top: 16px
+  left: 50%
+  &.nav-left
+    margin-left: -400px
+  &.nav-right
+    margin-left: 100px
+  ul
+    &.unstyled
+      margin: 0 0 10px 25px
+    li
+      float: left
+      padding-left: 50px
+      &.current a
+        text-decoration: underline
+      a
+        color: black
+        font-weight: 200
+        font-size: 20px
+        line-height: 20px
+        &:visited
+          color: black
+          font-weight: 200
+          font-size: 20px
+          line-height: 20px
+
+.snavbar-fixed-top .snavbar-inner, .snavbar-static-top .snavbar-inner
+  box-shadow: none
+
+.snavbar-inner
+  background-color: rgba(250, 250, 250, 0.9)
+  background-image: none
+
+.logo
+  text-align: center
+  a
+    margin-left: 20px
+
+img#logo
+  height: 40px
+  margin: 5px
+
+.bg
+  position: absolute
+  top: 50px
+  left: 0
+  width: 100%
+  background-image: url("/img/san-francisco-background.jpg")
+  background-size: cover
+  background-attachment: fixed
+  height: 390px
+
+#intro
+  .span12.targetresize
+    position: relative
+  .container
+
+#title
+  position: absolute
+  top: 30%
+  padding: 0
+  margin: 0
+  p.subs
+    margin: 0
+    padding: 0
+    display: inline
+    font-family: "proxima-nova",sans-serif
+    font-weight: 200
+    font-style: normal
+    box-shadow: 6px 0 0 0 rgba(23, 116, 145, 0.6), -6px 0 0 0 rgba(23, 116, 145, 0.6)
+    white-space: pre-line
+    color: white
+    background: rgba(23, 116, 145, 0.6)
+    font-size: 50px
+    line-height: normal
+
+#subtitle
+  position: absolute
+  top: 60%
+  padding: 0
+  margin: 0
+  p.subs
+    margin: 0
+    padding: 0
+    display: inline
+    font-family: "proxima-nova",sans-serif
+    font-weight: 300
+    font-style: normal
+    box-shadow: 6px 0 0 0 rgba(255, 154, 0, 0.6), -6px 0 0 0 rgba(255, 154, 0, 0.6)
+    white-space: pre-line
+    color: white
+    background: rgba(255, 154, 0, 0.6)
+    font-size: 28px
+    line-height: normal
+
+#title, #subtitle
+  margin-right: 20px
+
+.address
+  p
+    color: white
+    background-color: rgba(74, 74, 74, 0.8)
+    padding: 10px 5px 10px 5px
+    font-weight: 300
+  h1
+    position: absolute
+    top: 80px
+
+#map-canvas
+  margin: 0
+  padding: 0
+  height: 100%
+  height: 308px
+
+.blog .date
+  color: white
+  background-color: rgb(23, 116, 145)
+  padding: 7px
+  font-size: 20px
+  text-align: center
+  width: 60px
+  height: 60px
+  float: right
+  .month
+    font-weight: bold
+    text-transform: uppercase
+
+article
+  .contentblock
+    border-left: 1px solid rgb(23, 116, 145)
+    margin-left: 0
+    padding-left: 20px
+    p:last-child
+      margin-bottom: 0
+  .title
+    margin-top: 0
+    line-height: 26px
+  img
+    padding: 10px 0
+    margin: 0 auto
+
+.separator
+  padding: 10px 0 10px 0
+
+.latest_news
+  padding: 20px
+  h3
+    font-size: 40px
+    font-family: 'proxima-nova', sans-serif
+    font-weight: 300
+    font-style: italic
+
+footer
+  .contact
+    margin: 0
+    li
+      margin: 15px 20px 15px 0
+      .icon
+        width: 34px
+        text-align: center
+    a
+      color: white
+    font-size: 18px
+    line-height: 20px
+  .social
+    list-style: none
+    margin: 10px 0 0
+    li
+      float: left
+      margin: 0 20px 20px 0
+      &:last-child
+        margin-right: 0
+      .rounded
+        height: 50px
+        width: 50px
+        -moz-border-radius: 25px
+        border-radius: 25px
+        background-color: #CCC
+        color: #282828
+        transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out
+        span
+          font-size: 30px
+          position: relative
+        &.facebook span
+          top: 10px
+          left: 18px
+        &.twitter span
+          top: 10px
+          left: 10px
+        &.github span, &.slideshare span
+          top: 10px
+          left: 12px
+        &.facebook:hover
+          background-color: #3B5998
+          color: white
+        &.twitter:hover
+          background-color: #4099FF
+          color: white
+        &.github:hover, &.slideshare:hover
+          background-color: #FAFAFA
+          color: black
+      a:hover
+        text-decoration: none
+
+.iframe-rwd
+  position: relative
+  padding-bottom: 65.25%
+  padding-top: 30px
+  height: 0
+  overflow: hidden
+  iframe
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+
+@media (max-width: 979px) and (min-width: 768px)
+  body.home ul.thumbnails h3
+    font-size: 14px
+    line-height: 16px
+
+@media (max-width: 979px)
+  img#logo
+    margin-top: 0
+
+@media (min-width: 768px)
+  body.home ul.thumbnails a.thumbnail
+    transform: scale(1)
+    &:hover
+      transform: scale(1.1)
+
+@media (min-width: 1200px)
+  #title p.subs
+    font-size: 60px
+  #subtitle p.subs
+    font-size: 34px
+
+@media (max-width: 767px)
+  body
+    padding-left: 0
+    padding-right: 0
+    &.home ul.thumbnails a.thumbnail
+      margin: 10px
+      text-align: center
+    &.contact
+      .bg h1
+        text-align: left
+      .content
+        margin-top: 350px
+        .container .row .addressblock p
+          margin: 20px 0
+          text-align: center
+    &.portfolio_detail
+      section
+        &.project_name
+          margin-top: 10px
+        &.project_description
+          padding: 40px 10px
+          margin-left: 0
+          margin-right: 0
+        &.realcontent
+          img
+            margin: 0 !important
+            padding: 0
+          a.navigation
+            margin: 20px 20px 20px 0
+
+  .logo
+    a
+      margin-left: 0
+  .portfolio h1
+    margin-left: 10px
+  .navbar-fixed-top .navbar-inner, .navbar-fixed-bottom .navbar-inner
+    padding-bottom: 20px
+  .navbar-fixed-top
+    margin: 0
+  .snav
+    position: static
+    float: left
+    padding-top: 20px
+    &.nav-left, &.nav-right
+      margin-left: 0
+      width: 100%
+    ul
+      padding: 0
+      margin: 0
+      text-align: center
+      li
+        padding-left: 0
+        width: 50%
+  body
+    &.home .bg, &.contact .bg
+      top: 155px
+      height: 351px
+      min-height: 351px
+  #title
+    top: 20%
+    p.subs
+      font-size: 40px
+  #subtitle p.subs
+    font-size: 22px
+  #title, #subtitle
+    margin: 0 10px
+  section.content
+    margin-left: 10px
+    margin-right: 10px
+  footer
+    .pull-right
+      float: left
+      ul
+        margin-left: 5px
+      .cursive
+        text-align: left
+        margin-left: 30px
+    .span6
+      width: 310px
+      margin: 0 auto
+  .cubes
+    display: none
+  .cursive
+    font-size: 60px
+    line-height: 60px
+  .blog .date
+    float: left
+    margin-right: 10px
+  article
+    &.row
+      margin-left: 10px
+      margin-right: 10px
+    .contentblock
+      padding-left: 0
+      border-left: 0
