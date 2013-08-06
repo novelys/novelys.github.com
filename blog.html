@@ -6,20 +6,21 @@ body_class: "blog"
 <section class="trenches">
   <div class="container">
     <div class="row">
-      <div class="span4">
-        <h1 class="cursive"><span class="cubes">★☆★</span> </h1>
-      </div>
-      <div class="span8">
-        <h1 class="cursive">Latest news from the trenches <span class="cubes">★☆★</span></h1>
+      <div class="span12">
+        <h1 class="cursive">
+          <span class="cubes">★☆★</span>
+          Latest news from the trenches
+          <span class="cubes">★☆★</span>
+        </h1>
       </div>
     </div>
   </div>
 </section>
 <section>
   <div class="container">
-  {% for post in site.posts %}
+  {% for post in site.categories.blog %}
   <article class="row">
-    <div class="span4">
+    <div class="span3 dateblock">
       <div class="date">
         <div class="day">
           {{ post.date | date: "%d" }}
@@ -32,7 +33,7 @@ body_class: "blog"
         </div>
       </div>
     </div>
-    <div class="span6">
+    <div class="span8 contentblock">
       <h2 class="title">
         {{ post.title }}
       </h2>

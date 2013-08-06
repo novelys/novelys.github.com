@@ -1,0 +1,91 @@
+---
+layout: default
+project_slug: "artetvguide"
+project_name: "ARTE TV Guide"
+project_description: "ARTE TV Guide and ARTE+7 integration module"
+title:  "ARTE TV Guide - ARTE+7 module"
+date:   2013-04-18 12:00:00
+tags: Responsive Web Design, API, i18n
+categories:
+  - portfolio
+permalink: /portfolio/artetvguide.html
+body_class: "portfolio_detail"
+---
+
+<section class="content project_name">
+  <div class="container">
+    <div class="row">
+      <div class="span12">
+        <h1>{{page.project_name}}</h1>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="content project_description">
+  <div class="container">
+    <div class="row">
+      <div class="span12">
+        <h2>{{page.project_description}}</h2>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="content realcontent">
+  <div class="container">
+    <div class="row">
+      <div class="span4">
+        <p class="timeframe">from april 2013 until now</p>
+        <a href="http://www.arte.tv/guide" target="_blank" class="featured"><i class="icon-angle-right"></i> Visit their website</a>
+        <strong class="intro">The problem</strong>
+        <p>
+          ARTE, the french german cultural TV channel, was looking for a contractor to help maintain their TV Guide (<a href="http://en.wikipedia.org/wiki/Electronic_program_guide" target="_blank">EPG</a>) and continue its development by adding new functionnalities.
+        </p>
+        <strong class="intro">The solution</strong>
+        <p>
+          Novelys was quick to respond to their demand by letting one of it's Senior Rails developper get on par with the development. He was quick to immerse himself in the source code of the application.
+        </p>
+        <p>
+          The app is a "not so typical" Rails application: it has no storage layer, all business objects are queried through an internal private API.
+        </p>
+        <p>
+          The TV Guide serves 1.6M page views per month on average (and growing) and is a completely internationalized website, with french and german translations and localisations available for every pages.
+        </p>
+        <p>
+          That's why performance monitoring was setup on the whole application by our team and corrective actions were taken to improve the performance on several fronts: first on the API front (limit the number of queries on the internal API) and then on the user's perceived performance (limit the number of images loaded at once for example).
+        </p>
+        <p>
+          <a href="#" class="icon-arrow-down navigation gotoNextParagraph" title="go to next paragraph"></a>
+        </p>
+      </div>
+      <div class="span8">
+        <img src="/img/portfolio/arte_plus_seven_1.png" class="intro" />
+      </div>
+    </div>
+    <div class="row">
+      <div class="span4">
+        <p>The ARTE+7 module is a new addition since we took over the project. It's a visually integrated module of the ARTE+7 catchup service of ARTE.</p>
+        <p>Available movies on the catchup service are displayed through a carousel on desktop and tablet. Main and secondary filters are available to help you find the program of your choice.</p>
+        <p>Performance on this module was improved through the time to limit the number of ressources loaded by the page the first time it's displayed.</p>
+        <p>
+          <a href="#" class="icon-arrow-up navigation gotoPreviousParagraph" title="go to previous paragraph"></a>
+          <a href="#" class="icon-arrow-down navigation gotoNextParagraph" title="go to next paragraph"></a>
+        </p>
+      </div>
+      <div class="span8">
+        <img src="/img/portfolio/arte_plus_seven_2.png"/>
+      </div>
+    </div>
+    <div class="row">
+      <div class="span4">
+        <p>As the whole ARTE TV Guide, the ARTE+7 module is totally responsive. Therefore the interface shown to mobile phones is slightly different.</p>
+        <p>Once again, performance was a feature from day one. Indeed, viewing this page on a phone on a 3G network can be very deceptive if the page is not <strong>very</strong> quick.</p>
+        <p>
+          <a href="#" class="icon-arrow-up navigation gotoPreviousParagraph" title="go to previous paragraph"></a>
+        </p>
+      </div>
+      <div class="span8" style="text-align:center;">
+        <img src="/img/portfolio/arte_plus_seven_3.png"/>
+      </div>
+    </div>
+  </div>
+</section>

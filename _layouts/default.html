@@ -8,13 +8,14 @@
     <meta name="author" content="Novelys">
 
     <!-- Le styles -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
     <style type="text/css">
       body {
         padding-top: 40px;
       }
     </style>
-    <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="/css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,800,700,600' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Ubuntu:400,500,700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
@@ -22,7 +23,7 @@
     <script type="text/javascript" src="//use.typekit.net/fxz8psd.js"></script>
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
-    <link href="css/extra.css" rel="stylesheet">
+    <link href="/css/extra.css" rel="stylesheet">
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -38,12 +39,12 @@
       <div class="navbar-inner">
         <div class="container">
           <div class="logo">
-            <a href="/"><img id="logo" src="img/logo.png" alt="Novelys Logo"></a>
+            <a href="/"><img id="logo" src="/img/logo.png" alt="Novelys Logo"></a>
           </div>
           <div class="snav nav-left">
             <ul class="unstyled">
               <li><a href="/vision.html">Vision</a></li>
-              <li><a href="#">Work</a></li>
+              <li><a href="/portfolio.html">Portfolio</a></li>
             </ul>
           </div>
           <div class="snav nav-right">
@@ -69,15 +70,15 @@
                   <div class="pull-left"><div class="cursive">Contact us!</div></div>
                 </li>
                 <li class="clearfix">
-                  <div class="pull-left icon"><span class="icomoon-envelope-alt"></span></div>
+                  <div class="pull-left icon"><span class="icon-envelope-alt"></span></div>
                   <div class="pull-left"><a href="mailto:contact@novelys.com">contact@novelys.com</a></div>
                 </li>
                 <li class="clearfix">
-                  <div class="pull-left icon"><span class="icomoon-phone"></span></div>
+                  <div class="pull-left icon"><span class="icon-phone"></span></div>
                   <div class="pull-left">+33 (0)8 05 69 60 67</div>
                 </li>
                 <li class="clearfix">
-                  <div class="pull-left icon"><span class="icomoon-map-marker"></span></div>
+                  <div class="pull-left icon"><span class="icon-map-marker"></span></div>
                   <div class="pull-left">
                       15 route du Rhin
                       <br/>
@@ -94,28 +95,28 @@
                 <li>
                   <a target="_blank" href="https://www.facebook.com/novelys">
                     <div class="rounded facebook">
-                      <span class="icomoon-facebook"></span>
+                      <span class="icon-facebook"></span>
                     </div>
                   </a>
                 </li>
                 <li>
                   <a target="_blank" href="https://twitter.com/novelys">
                     <div class="rounded twitter">
-                      <span class="icomoon-twitter"></span>
+                      <span class="icon-twitter"></span>
                     </div>
                   </a>
                 </li>
                 <li>
                   <a target="_blank" href="https://github.com/novelys">
                     <div class="rounded github">
-                      <span class="icomoon-github"></span>
+                      <span class="icon-github"></span>
                     </div>
                   </a>
                 </li>
                 <li>
                   <a target="_blank" href="http://www.slideshare.net/novelys">
                     <div class="rounded slideshare">
-                      <span class="icomoon-slideshare"></span>
+                      <span class="icon-slideshare"></span>
                     </div>
                   </a>
                 </li>
@@ -143,6 +144,19 @@
         computeBackgroundHeight();
       });
     }
+
+    $(".gotoNextParagraph").on("click", function(e){
+      e.preventDefault();
+      var next_paragraph = $(e.target).closest(".row").next(".row");
+      $('html, body').animate({scrollTop:next_paragraph.offset().top-60}, 'slow');
+    });
+
+    $(".gotoPreviousParagraph").on("click", function(e){
+      e.preventDefault();
+      var previous_paragraph = $(e.target).closest(".row").prev(".row");
+      $('html, body').animate({scrollTop:previous_paragraph.offset().top-60}, 'slow');
+    });
+
   });
   </script>
   </body>

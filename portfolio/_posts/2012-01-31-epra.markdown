@@ -1,0 +1,16 @@
+---
+layout: default
+project_slug: "epra"
+project_name: "EPRA website"
+project_description: "EPRA main website"
+title:  "BestOf Photos: create photo albums automagically from your Facebook social graph"
+date:   2012-01-31 21:00:00
+tags: CMS, Solr, VideoJS/Zencoder, i18n
+categories:
+  - portfolio
+permalink: /portfolio/epra.html
+---
+
+<h1>{{page.project_name}}</h1>
+<h2>{{page.project_description}}</h2>
+
