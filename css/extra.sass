@@ -79,8 +79,12 @@ body
       color: white
       margin-top: 150px
   &.portfolio
-    .row
-      margin-bottom: 20px
+    p.intro
+      text-align: center
+      margin-bottom: 40px
+    .thumbnails
+      .portfolio_detail
+        margin-bottom: 30px
   &.portfolio_detail
     section
       padding: 20px 0
@@ -151,7 +155,7 @@ footer
   &.nav-left
     margin-left: -400px
   &.nav-right
-    margin-left: 100px
+    margin-left: 80px
   ul
     &.unstyled
       margin: 0 0 10px 25px
@@ -180,8 +184,6 @@ footer
 
 .logo
   text-align: center
-  a
-    margin-left: 20px
 
 img#logo
   height: 40px
@@ -370,6 +372,10 @@ footer
 @media (max-width: 979px)
   img#logo
     margin-top: 0
+  .portfolio_detail
+    h1
+      font-size: 24px
+      line-height: 26px
 
 @media (min-width: 768px)
   body.home ul.thumbnails a.thumbnail
@@ -419,6 +425,8 @@ footer
       margin-left: 0
   .portfolio h1
     margin-left: 10px
+  .portfolio_detail
+    text-align: center
   .navbar-fixed-top .navbar-inner, .navbar-fixed-bottom .navbar-inner
     padding-bottom: 20px
   .navbar-fixed-top

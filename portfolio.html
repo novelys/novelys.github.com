@@ -15,20 +15,29 @@ body_class: "portfolio"
 
 <section class="content">
   <div class="container">
-    {% for post in site.categories.portfolio %}
-      <div class="row">
-        <div class="span3">
-          <a href="{{post.url}}" class="thumbnail">
-            <img src="/img/home/{{post.project_slug}}.png" />
-          </a>
+    <div class="row">
+      <p class="intro">This is a selection of our latest work. We also worked for <a href="http://www.quelleenergie.fr/" target="_blank">QuelleEnergie.fr</a>, <a href="http://www.dashlane.com/" target="_blank">Dashlane</a>, <a href="http://www.mygaytrip.com/" target="_blank">myGayTrip.com</a>, <a href="http://www.lacimade.org" target="_blank">La Cimade</a>, <a href="http://www.semad-normandie.fr" target="_blank">SEMAD</a>, <a href="http://www.keldelice.com" target="_blank">Keldelice</a>, <a href="http://www.hakisa.com" target="_blank">Hakisa</a>, <a href="http://www.happyfannie.com/" target="_blank">Happy Fannie</a>, etc.</p>
+    </div>
+    <div class="row">
+      <ul class="thumbnails">
+        {% for post in site.categories.portfolio %}
+        <div class="span6 portfolio_detail">
+          <div class="row-fluid">
+            <div class="span6">
+              <a href="{{post.url}}" class="thumbnail">
+                <img src="/img/home/{{post.project_slug}}.png" />
+              </a>
+            </div>
+            <div class="span6">
+              <h1>{{post.project_name}}</h1>
+              <p>{{post.project_description}}</p>
+              <a href="{{post.url}}">more</a>
+            </div>
+          </div>
         </div>
-        <div class="span9">
-          <h2>{{post.project_name}}</h2>
-          <h3>{{post.project_description}}</h3>
-          <a href="{{post.url}}">more</a>
-        </div>
-      </div>
-    {% endfor %}
+        {% endfor %}
+      </ul>
+    </div>
   </div>
 </section>
 

@@ -74,8 +74,11 @@ body.contact .bg h1, body.portfolio .bg h1, body.vision .bg h1 {
   text-align: right;
   color: white;
   margin-top: 150px; }
-body.portfolio .row {
-  margin-bottom: 20px; }
+body.portfolio p.intro {
+  text-align: center;
+  margin-bottom: 40px; }
+body.portfolio .thumbnails .portfolio_detail {
+  margin-bottom: 30px; }
 body.portfolio_detail section {
   padding: 20px 0; }
   body.portfolio_detail section.project_name {
@@ -145,7 +148,7 @@ footer {
   .snav.nav-left {
     margin-left: -400px; }
   .snav.nav-right {
-    margin-left: 100px; }
+    margin-left: 80px; }
   .snav ul.unstyled {
     margin: 0 0 10px 25px; }
   .snav ul li {
@@ -173,8 +176,6 @@ footer {
 
 .logo {
   text-align: center; }
-  .logo a {
-    margin-left: 20px; }
 
 img#logo {
   height: 40px;
@@ -356,7 +357,11 @@ footer .social {
     line-height: 16px; } }
 @media (max-width: 979px) {
   img#logo {
-    margin-top: 0; } }
+    margin-top: 0; }
+
+  .portfolio_detail h1 {
+    font-size: 24px;
+    line-height: 26px; } }
 @media (min-width: 768px) {
   body.home ul.thumbnails a.thumbnail {
     transform: scale(1); }
@@ -399,6 +404,9 @@ footer .social {
 
   .portfolio h1 {
     margin-left: 10px; }
+
+  .portfolio_detail {
+    text-align: center; }
 
   .navbar-fixed-top .navbar-inner, .navbar-fixed-bottom .navbar-inner {
     padding-bottom: 20px; }
