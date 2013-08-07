@@ -89,8 +89,13 @@ body.portfolio_detail section {
     margin: 10px 0;
     display: block; }
   body.portfolio_detail section.realcontent .timeframe {
-    font-style: italic;
+    margin-bottom: 0; }
+    body.portfolio_detail section.realcontent .timeframe span {
+      font-style: italic; }
+  body.portfolio_detail section.realcontent .tags {
     margin-bottom: 20px; }
+    body.portfolio_detail section.realcontent .tags span {
+      font-style: italic; }
   body.portfolio_detail section.realcontent img.intro {
     margin-top: -80px; }
   body.portfolio_detail section.realcontent a.featured {

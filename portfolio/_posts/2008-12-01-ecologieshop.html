@@ -1,0 +1,142 @@
+---
+layout: default
+project_slug: "ecologieshop"
+project_name: "EcologieShop"
+project_description: "EcologieShop, a complete ecommerce platform, with one central stock management and several satellite websites"
+title: "EcologieShop, a complete ecommerce platform, with one central stock management and several satellite websites"
+date:   2008-12-01 21:00:00
+tags:
+  - Ruby
+  - Rails
+  - Sphinx Search
+  - ecommerce
+  - SOA
+  - API
+categories:
+  - portfolio
+permalink: /portfolio/ecologieshop.html
+body_class: "portfolio_detail"
+---
+
+<section class="content project_name">
+  <div class="container">
+    <div class="row">
+      <div class="span12">
+        <h1>{{page.project_name}}</h1>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="content project_description">
+  <div class="container">
+    <div class="row">
+      <div class="span12">
+        <h2>{{page.project_description}}</h2>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="content realcontent">
+  <div class="container">
+    <div class="row">
+      <div class="span4">
+        <p class="timeframe">date: <span>from december 2008 until now</span></p>
+        <p class="tags">tags: <span>{{ page.tags | join:', ' }}</span></p>
+        <a href="http://www.ecologie-shop.com" target="_blank" class="featured"><i class="icon-angle-right"></i> Visit their website</a>
+        <strong class="intro">The concept</strong>
+        <p>
+          Novelys was hired initially to develop and maintain the <a href="http://www.ecologie-shop.com">EcologieShop</a> website. It's a <strong>complete ecommerce website</strong>, you'll find:
+          <ul>
+            <li>a tree of categories,</li>
+            <li>products,</li>
+            <li>product variants(bulbs can have 5W, 10W or 15W power, can be available with screws or sockets),</li>
+            <li>packages (arrangement of several products with their own quantity),</li>
+            <li>product rebates and category rebates,</li>
+            <li>coupon code,</li>
+            <li>Content Management System (CMS)</li>
+            <li>Credit Card and Paypal payment gateway integration</li>
+            <li>Full text search</li>
+            <li>etc.</li>
+          </ul>
+          Of course a back office is available to fully operate the platform.
+          <br/>
+          Stock and delivery management is integrated into the ecommerce platform. Deliveries are ordered to an external logistic partner.
+          <strong class="intro">The problem</strong>
+          After 3 years and more than <strong>1M € of turnover per year</strong>, the customer wanted to split the website into several, each with their own unique branding.
+        </p>
+        <strong class="intro">The solution</strong>
+        <p>
+          Novelys externalise the stock management into its own application, available trough a private API, doing what is called <strong>Service Oriented Architecture (SOA)</strong>.
+        </p>
+        <p>
+          We then setup a source code infrastructure to share the common part between the satellite websites in a smart way.
+        </p>
+        <p>
+          <a href="#" class="icon-arrow-down navigation gotoNextParagraph" title="go to next paragraph"></a>
+        </p>
+      </div>
+      <div class="span8">
+        <img src="/img/portfolio/ecologieshop_1.png" class="intro" />
+      </div>
+    </div>
+    <div class="row">
+      <div class="span4">
+        <p>
+          <a href="http://www.ecolodis-solaire.com">Ecolodis Solaire</a> is one of the many satellite website gravitating around the EcologieShop ecommerce platform.
+        </p>
+        <p>
+          <a href="#" class="icon-arrow-down navigation gotoNextParagraph" title="go to next paragraph"></a>
+          <a href="#" class="icon-arrow-up navigation gotoPreviousParagraph" title="go to previous paragraph"></a>
+        </p>
+      </div>
+      <div class="span8" style="text-align:center;">
+        <img src="/img/portfolio/ecologieshop_2.png"/>
+      </div>
+    </div>
+    <div class="row">
+      <div class="span4">
+        <p>
+          Each satellite website has its own operators who operates the site through its own back office.
+        </p>
+        <p>
+          Every content is manageable through this interface: the products, the packages, the SEO descriptions (Search Engine Optimisation), the news, the editorial sections, the highlighted products, etc.
+        </p>
+        <p>
+          Several CSV <strong>exports</strong> and <strong>dashboards</strong> are available to the admin users. It's the main software used by the customer and its employees to manage its business.
+        </p>
+        <p>
+          Products feeds are built to advertise product informations to affiliate business partners like:
+          <ul>
+            <li>RueDuCommerce (XML)</li>
+            <li>Netaffiliation (XML)</li>
+            <li>Price Minister (XML)</li>
+            <li>Neteven (SOAP)</li>
+          </ul>
+        </p>
+        <p>
+          <a href="#" class="icon-arrow-down navigation gotoNextParagraph" title="go to next paragraph"></a>
+          <a href="#" class="icon-arrow-up navigation gotoPreviousParagraph" title="go to previous paragraph"></a>
+        </p>
+      </div>
+      <div class="span8" style="text-align:center;">
+        <img src="/img/portfolio/ecologieshop_3.png"/>
+      </div>
+    </div>
+    <div class="row">
+      <div class="span4">
+        <p>
+          The stock backend has its own dedicated control panel.
+        </p>
+        <p>
+          The web application is <strong>interconnected with the logistic partner</strong> (<a href="http://www.morin-logistic.com/">Moring Logistic</a>) to export and import delivery informations.
+        </p>
+        <p>
+          <a href="#" class="icon-arrow-up navigation gotoPreviousParagraph" title="go to previous paragraph"></a>
+        </p>
+      </div>
+      <div class="span8" style="text-align:center;">
+        <img src="/img/portfolio/ecologieshop_4.png"/>
+      </div>
+    </div>
+  </div>
+</section>

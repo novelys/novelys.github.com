@@ -5,11 +5,14 @@ project_name: "ABCDaire d'Alsace"
 project_description: "ABCDaire d'Alsace, an online version of an ABC-Book"
 title:  "ABCDaire d'Alsace"
 date:   2013-03-13 19:00:00
-tags: Responsive Web Design
-categories:
-  - portfolio
+tags:
+  - Ruby
+  - Rails
+  - Responsive Web Design
 permalink: /portfolio/abcalsace.html
 body_class: "portfolio_detail"
+categories:
+  - portfolio
 ---
 
 <section class="content project_name">
@@ -34,7 +37,8 @@ body_class: "portfolio_detail"
   <div class="container">
     <div class="row">
       <div class="span4">
-        <p class="timeframe">february 2013</p>
+        <p class="timeframe">date: <span>february 2013</span></p>
+        <p class="tags">tags: <span>{{ page.tags | join:', ' }}</span></p>
         <a href="http://www.abc-alsace.com" target="_blank" class="featured"><i class="icon-angle-right"></i> Visit their website</a>
         <strong class="intro">The problem</strong>
         <p>

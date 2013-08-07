@@ -5,11 +5,16 @@ project_name: "ARTE TV Guide"
 project_description: "ARTE TV Guide and ARTE+7 integration module"
 title:  "ARTE TV Guide - ARTE+7 module"
 date:   2013-04-18 12:00:00
-tags: Responsive Web Design, API, i18n
-categories:
-  - portfolio
+tags:
+  - Ruby
+  - Rails
+  - Responsive Web Design
+  - API
+  - i18n
 permalink: /portfolio/artetvguide.html
 body_class: "portfolio_detail"
+categories:
+  - portfolio
 ---
 
 <section class="content project_name">
@@ -34,7 +39,8 @@ body_class: "portfolio_detail"
   <div class="container">
     <div class="row">
       <div class="span4">
-        <p class="timeframe">from april 2013 until now</p>
+        <p class="timeframe">date: <span>from april 2013 until now</span></p>
+        <p class="tags">tags: <span>{{ page.tags | join:', ' }}</span></p>
         <a href="http://www.arte.tv/guide" target="_blank" class="featured"><i class="icon-angle-right"></i> Visit their website</a>
         <strong class="intro">The problem</strong>
         <p>
