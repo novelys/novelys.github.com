@@ -28,6 +28,14 @@ body.home .trenches .date {
   width: 100px; }
 body.home .trenches .dot {
   padding-right: 10px; }
+body.home ul.logos {
+  text-align: center;
+  margin-bottom: 20px; }
+  body.home ul.logos li {
+    margin-left: 20px;
+    margin-top: 20px; }
+    body.home ul.logos li:first-child {
+      margin-left: 0; }
 body.home ul.thumbnails {
   margin-left: 0; }
   body.home ul.thumbnails a.thumbnail {
@@ -377,6 +385,8 @@ footer .social {
   body {
     padding-left: 0;
     padding-right: 0; }
+    body.home ul.logos li {
+      width: 100%; }
     body.home ul.thumbnails a.thumbnail {
       margin: 10px;
       text-align: center; }
