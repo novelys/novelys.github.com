@@ -20,7 +20,7 @@ a {
   .cursive .cubes {
     font-size: 30px; }
 
-.trenches, .portfolio {
+.trenches, section.portfolio {
   background-color: #f3f3f3;
   padding: 20px 0; }
 
@@ -375,11 +375,11 @@ footer .social {
     body.home ul.thumbnails a.thumbnail {
       margin: 10px;
       text-align: center; }
-    body.contact .bg h1 {
+    body.contact .bg h1, body.portfolio .bg h1, body.portfolio_detail .bg h1, body.vision .bg h1 {
       text-align: left; }
-    body.contact .content {
+    body.contact .content, body.portfolio .content, body.portfolio_detail .content, body.vision .content {
       margin-top: 350px; }
-      body.contact .content .container .row .addressblock p {
+      body.contact .content .container .row .addressblock p, body.portfolio .content .container .row .addressblock p, body.portfolio_detail .content .container .row .addressblock p, body.vision .content .container .row .addressblock p {
         margin: 20px 0;
         text-align: center; }
     body.portfolio_detail section.project_name {
@@ -421,7 +421,7 @@ footer .social {
         padding-left: 0;
         width: 50%; }
 
-  body.home .bg, body.contact .bg {
+  body.home .bg, body.contact .bg, body.portfolio .bg, body.portfolio_detail .bg, body.vision .bg {
     top: 155px;
     height: 351px;
     min-height: 351px; }
