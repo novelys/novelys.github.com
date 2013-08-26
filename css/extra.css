@@ -374,7 +374,12 @@ footer .social {
   body.home ul.thumbnails a.thumbnail {
     transform: scale(1); }
     body.home ul.thumbnails a.thumbnail:hover {
-      transform: scale(1.1); } }
+      transform: scale(1.1); }
+
+  body .thumbnails .portfolio_detail a.thumbnail {
+    transform: scale(1); }
+    body .thumbnails .portfolio_detail a.thumbnail:hover {
+      transform: scale(1.08); } }
 @media (min-width: 1200px) {
   #title p.subs {
     font-size: 60px; }
@@ -431,7 +436,7 @@ footer .social {
     .snav.nav-left, .snav.nav-right {
       margin-left: 0;
       width: 100%; }
-    .snav ul, .snav ul.unstyled  {
+    .snav ul {
       padding: 0;
       margin: 0;
       text-align: center; }
