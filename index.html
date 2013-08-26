@@ -21,7 +21,7 @@ body_class: "home"
 <section class="content">
   <div class="container">
     <div class="row">
-      <div class="span12">
+      <div class="span8">
         <h1>What do we do?</h1>
         <p>
           We create websites, <strong>web applications</strong>, <strong>mobile web</strong> applications and native mobile applications. We can do it remotely in our office in Strasbourg, France, or we can do it on site, in your office.
@@ -64,6 +64,36 @@ body_class: "home"
             <li><img src="/img/logo/backbone.resized.png" alt="BackboneJS" title="BackboneJS" /></li>
           </ul>
         </p>
+      </div>
+      <div class="span4 sidebar">
+        <div class="inner">
+
+          <h1 class="cursive">
+            Latest news
+            <br/>
+            from the trenches
+            <br/>
+            <span class="cubes">★☆★</span>
+          </h1>
+          <ul class="links">
+            {% for post in site.categories.blog %}
+              <li><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
+            {% endfor %}
+            {% for post in site.categories.blog %}
+              <li><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
+            {% endfor %}
+            {% for post in site.categories.blog %}
+              <li><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
+            {% endfor %}
+            {% for post in site.categories.blog %}
+              <li><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
+            {% endfor %}
+            {% for post in site.categories.blog %}
+              <li><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
+            {% endfor %}
+          </ul>
+
+        </div>
       </div>
     </div>
   </div>
