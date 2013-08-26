@@ -99,7 +99,7 @@ body_class: "home"
           <a href="{{post.url}}" class="thumbnail">
             <img src="/img/home/{{post.project_slug}}.png" />
             <h3>{{post.project_name}}</h3>
-            <!--<p><small>{{post.tags}}</small></p>-->
+            <p class="tags">{{post.tags | first }}</p>
           </a>
         </li>
         {% endfor %}
