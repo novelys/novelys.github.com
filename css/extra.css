@@ -293,9 +293,14 @@ article .contentblock {
   padding-left: 20px; }
   article .contentblock p:last-child {
     margin-bottom: 0; }
+  article .contentblock a.more {
+    font-weight: bold;
+    text-decoration: underline; }
 article .title {
   margin-top: 0;
   line-height: 26px; }
+  article .title a, article .title a:hover, article .title a:visited, article .title a:focus {
+    color: black; }
 article img {
   padding: 10px 0;
   margin: 0 auto; }

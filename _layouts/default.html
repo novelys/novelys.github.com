@@ -57,7 +57,35 @@
       </div>
     </div>
 
-    {{ content }}
+    {% if page.body_class == "blog" %}
+      <section class="trenches">
+        <div class="container">
+          <div class="row">
+            <div class="span12">
+              <h1 class="cursive">
+                <span class="cubes">★☆★</span>
+                Latest news from the trenches
+                <span class="cubes">★☆★</span>
+              </h1>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container">
+          {% if page.title == "Blog" %}
+            {{ content }}
+          {% else %}
+            {% assign post = page %}
+            {% include post_top.html %}
+            {{ content }}
+            {% include post_bottom.html %}
+          {% endif %}
+        </div>
+      </section>
+    {% else %}
+      {{ content }}
+    {% endif %}
 
     <footer>
       <div class="container">

@@ -1,9 +1,11 @@
 ---
-layout: post
+layout: default
 title:  "First release of ARTE's TV Guide"
 date:   2013-04-18 20:00:00
 categories: blog
 tags: client
+body_class: "blog"
+comments: true
 ---
 
 For a few weeks now, we've been working for [ARTE](http://www.arte.tv) (the french-german cultural TV channel) on their new [TV Guide](http://www.arte.tv/guide/) and especially the [ARTE+7](http://www.arte.tv/guide/fr/plus7) module. As the name indicates, this module is a mashup between the TV Guide and the ARTE+7 video catchup service.
