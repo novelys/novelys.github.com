@@ -1,3 +1,7 @@
 {% include post_top.html %}
-{{ post.content }}
+  {% if page.title == "Blog" %}
+    {{ post.excerpt }}
+  {% else %}
+    {{ post.content }}
+  {% endif %}
 {% include post_bottom.html %}
