@@ -102,8 +102,9 @@ body.contact .bg h1, body.portfolio .bg h1, body.vision .bg h1 {
   text-align: right;
   color: white;
   margin-top: 150px; }
-body.portfolio p.intro {
+body.portfolio .intro {
   text-align: center;
+  margin-top: 10px;
   margin-bottom: 40px; }
 body.portfolio .thumbnails .portfolio_detail {
   margin-bottom: 30px; }
