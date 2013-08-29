@@ -435,6 +435,10 @@ footer .social {
       body.contact .content .container .row .addressblock p {
         margin: 20px 0;
         text-align: center; }
+    body.portfolio h1 {
+      margin-left: 10px; }
+    body.portfolio .portfolio_detail {
+      text-align: center; }
     body.portfolio_detail section.project_name {
       margin-top: 10px; }
     body.portfolio_detail section.project_description {
@@ -447,14 +451,11 @@ footer .social {
     body.portfolio_detail section.realcontent a.navigation {
       margin: 20px 20px 20px 0; }
 
+  .navigation.icon-arrow-down, .navigation.icon-arrow-up {
+    display: none; }
+
   .logo a {
     margin-left: 0; }
-
-  .portfolio h1 {
-    margin-left: 10px; }
-
-  .portfolio_detail {
-    text-align: center; }
 
   .navbar-fixed-top .navbar-inner, .navbar-fixed-bottom .navbar-inner {
     padding-bottom: 20px; }
