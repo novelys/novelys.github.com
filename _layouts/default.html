@@ -25,6 +25,15 @@
 
     <link href="/css/extra.css" rel="stylesheet">
 
+    <meta property="og:title" content="Novelys - {{page.title}}" />
+    {% if page.excerpt %}
+    <meta property="og:description" content="Novelys - {{ page.excerpt | escape }}">
+    {% else %}
+    <meta property="og:description" content="Novelys - Ruby on Rails development - Strasbourg, France">
+    {% endif %}
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="http://www.novelys.com/img/logo.png" />
+
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
