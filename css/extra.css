@@ -38,6 +38,28 @@ body.home .sidebar .inner {
     body.home .sidebar .inner .cursive .cubes {
       display: block;
       padding: 20px 0 10px 0; }
+  body.home .sidebar .inner .links li {
+    display: none; }
+  body.home .sidebar .inner .links li:first-child {
+    display: list-item; }
+    body.home .sidebar .inner .links li:first-child + li {
+      display: list-item; }
+      body.home .sidebar .inner .links li:first-child + li + li {
+        display: list-item; }
+        body.home .sidebar .inner .links li:first-child + li + li + li {
+          display: list-item; }
+          body.home .sidebar .inner .links li:first-child + li + li + li + li {
+            display: list-item; }
+            body.home .sidebar .inner .links li:first-child + li + li + li + li + li {
+              display: list-item; }
+              body.home .sidebar .inner .links li:first-child + li + li + li + li + li + li {
+                display: list-item; }
+                body.home .sidebar .inner .links li:first-child + li + li + li + li + li + li + li {
+                  display: list-item; }
+                  body.home .sidebar .inner .links li:first-child + li + li + li + li + li + li + li + li {
+                    display: list-item; }
+                    body.home .sidebar .inner .links li:first-child + li + li + li + li + li + li + li + li + li {
+                      display: list-item; }
   body.home .sidebar .inner .links a {
     color: black;
     line-height: 24px; }

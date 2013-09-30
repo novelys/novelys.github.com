@@ -14,5 +14,5 @@
   </div>
   <div class="span8 contentblock">
       <h2 class="title">
-        <a href="{{ post.url }}">{{ post.title }}</a>
+        <a href="{{ post.url }}">{% if post.categories contains "Portfolio" %}[CASE STUDY] {% endif %}{{ post.title }}</a>
       </h2>
