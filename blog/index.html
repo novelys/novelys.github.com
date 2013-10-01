@@ -13,7 +13,7 @@ body_class: "blog"
     {% if paginator.previous_page %}
       {% if paginator.previous_page == 1 %}
         <li>
-          <a href="/">&laquo;</a>
+          <a href="/blog">&laquo;</a>
         </li>
       {% else %}
         <li>
@@ -31,7 +31,7 @@ body_class: "blog"
       </li>
     {% else %}
       <li>
-        <a href="/">1</a>
+        <a href="/blog">1</a>
       </li>
     {% endif %}
     {% for count in (2..paginator.total_pages) %}
