@@ -94,7 +94,7 @@ body_class: "home"
     </div>
     <div class="row">
       <ul class="thumbnails">
-        {% for post in site.categories.portfolio %}
+        {% for post in site.categories.portfolio limit:8 %}
         <li class="span3">
           <a href="{{post.url}}" class="thumbnail">
             <img src="/img/home/{{post.project_slug}}.png" />
