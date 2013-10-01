@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: portfolio
 project_slug: "epra"
 project_name: "EPRA"
 project_description: "The EPRA website, a complex Content Management System (CMS) with fulltext search, documents indexing and multi-level rights authorization"
@@ -19,93 +19,71 @@ body_class: "portfolio_detail"
 excerpt: "The EPRA is an european platform that aims to provide a forum for informal discussion and exchange of views between regulatory authorities in the broadcasting field, for exchange of information about common issues of national and European broadcasting regulation, and for discussion of practical solutions to legal problems regarding the interpretation and application of broadcasting regulation."
 ---
 
-<section class="content project_name">
-  <div class="container">
-    <div class="row">
-      <div class="span12">
-        <h1>{{page.project_name}}</h1>
-      </div>
-    </div>
+<div class="row">
+  <div class="span4">
+    <p class="timeframe">date: <span>february 2013</span></p>
+    <p class="tags">tags: <span>{{ page.tags | join:', ' }}</span></p>
+    <a href="http://www.epra.org" target="_blank" class="featured"><i class="icon-angle-right"></i> Visit their website</a>
+    <strong class="intro">The problem</strong>
+    <p>
+      The EPRA is an european platform that aims to provide a forum for informal discussion and exchange of views between regulatory authorities in the broadcasting field, for exchange of information about common issues of national and European broadcasting regulation, and for discussion of practical solutions to legal problems regarding the interpretation and application of broadcasting regulation.
+    </p>
+    <p>
+      They came to us with the need for an online platform where their members could interact, centralize and organize their work.
+    </p>
+    <strong class="intro">The solution</strong>
+    <p>
+      Keeping in mind their use-cases, we ended up building a web application which incorporates many traits of content management systems and online forums, and provides tools for collaborative work.
+      <br/>
+      Users and groups permissions are finely grained, allowing a great control over who can see/edit what.
+      <br/>
+      We put a strong accent in the search engine, which is backed by Solr and Sunspot. Everything posted in the website is searchable: events, announcements, forum posts, pdf attachments... Users and groups permissions are obviously taken into account while searching.
+    </p>
+    <p>
+      <a href="#" class="icon-arrow-down navigation gotoNextParagraph" title="go to next paragraph"></a>
+    </p>
   </div>
-</section>
-<section class="content project_description">
-  <div class="container">
-    <div class="row">
-      <div class="span12">
-        <h2>{{page.project_description}}</h2>
-      </div>
-    </div>
+  <div class="span8">
+    <img src="/img/portfolio/epra_1.png" class="intro" />
   </div>
-</section>
-<section class="content realcontent">
-  <div class="container">
-    <div class="row">
-      <div class="span4">
-        <p class="timeframe">date: <span>february 2013</span></p>
-        <p class="tags">tags: <span>{{ page.tags | join:', ' }}</span></p>
-        <a href="http://www.epra.org" target="_blank" class="featured"><i class="icon-angle-right"></i> Visit their website</a>
-        <strong class="intro">The problem</strong>
-        <p>
-          The EPRA is an european platform that aims to provide a forum for informal discussion and exchange of views between regulatory authorities in the broadcasting field, for exchange of information about common issues of national and European broadcasting regulation, and for discussion of practical solutions to legal problems regarding the interpretation and application of broadcasting regulation.
-        </p>
-        <p>
-          They came to us with the need for an online platform where their members could interact, centralize and organize their work.
-        </p>
-        <strong class="intro">The solution</strong>
-        <p>
-          Keeping in mind their use-cases, we ended up building a web application which incorporates many traits of content management systems and online forums, and provides tools for collaborative work.
-          <br/>
-          Users and groups permissions are finely grained, allowing a great control over who can see/edit what.
-          <br/>
-          We put a strong accent in the search engine, which is backed by Solr and Sunspot. Everything posted in the website is searchable: events, announcements, forum posts, pdf attachments... Users and groups permissions are obviously taken into account while searching.
-        </p>
-        <p>
-          <a href="#" class="icon-arrow-down navigation gotoNextParagraph" title="go to next paragraph"></a>
-        </p>
-      </div>
-      <div class="span8">
-        <img src="/img/portfolio/epra_1.png" class="intro" />
-      </div>
-    </div>
-    <div class="row">
-      <div class="span4">
-        <p>
-          Some of the application tools are specifically tailored for the work members of EPRA are doing.
-        </p>
-        <p>
-          Members can set up surveys, which can then be answered by other members. There is a wide range of options for survey questions, grouping of questions, type of answer expected, requirement of answers. Member can save their answers as draft before making them public.
-          <br />
-          The member who initiated the survey can visualise the answers. When appropriate, graphics (such as pie charts) are displayed. Those results can be exported in PDF
-        </p>
-        <p>
-          The application also allows members to upload videos. We tackled the issue of video formats by leveraging <a hreg="http://zencoder.com/en/" target="_blank">Zencoder</a> capabilities.
-        </p>
-        <p>
-          You'll also find articles, announcements, links, and a forum, among others. The application was internationalized from day one. The interface, but also every content, are available in two languages (english and french). Should there be a need for other languages to be added, everything is already in place, and the work required would be minimum.
-        </p>
-        <p>
-          <a href="#" class="icon-arrow-down navigation gotoNextParagraph" title="go to next paragraph"></a>
-          <a href="#" class="icon-arrow-up navigation gotoPreviousParagraph" title="go to previous paragraph"></a>
-        </p>
-      </div>
-      <div class="span8" style="text-align:center">
-        <img src="/img/portfolio/epra_2.png"/>
-      </div>
-    </div>
-    <div class="row">
-      <div class="span4">
-        <p>
-          We realized the application in coordination with the client, doing it full agile all the way. We did a breakdown of the features in milestones, and while we put a duration and a pricetag on each one, it served only as an estimate, the billing being done in regard of the time spent at the end of the month.
-          <br />
-          In the end, the client felt involved and listened to all along the way, and was able to provide us feedback as soon as possible, leading to a final product that met entirely his satisfaction.
-        </p>
-        <p>
-          <a href="#" class="icon-arrow-up navigation gotoPreviousParagraph" title="go to previous paragraph"></a>
-        </p>
-      </div>
-      <div class="span8" style="text-align:center">
-        <img src="/img/portfolio/epra_3.png"/>
-      </div>
-    </div>
+</div>
+<div class="row">
+  <div class="span4">
+    <p>
+      Some of the application tools are specifically tailored for the work members of EPRA are doing.
+    </p>
+    <p>
+      Members can set up surveys, which can then be answered by other members. There is a wide range of options for survey questions, grouping of questions, type of answer expected, requirement of answers. Member can save their answers as draft before making them public.
+      <br />
+      The member who initiated the survey can visualise the answers. When appropriate, graphics (such as pie charts) are displayed. Those results can be exported in PDF
+    </p>
+    <p>
+      The application also allows members to upload videos. We tackled the issue of video formats by leveraging <a hreg="http://zencoder.com/en/" target="_blank">Zencoder</a> capabilities.
+    </p>
+    <p>
+      You'll also find articles, announcements, links, and a forum, among others. The application was internationalized from day one. The interface, but also every content, are available in two languages (english and french). Should there be a need for other languages to be added, everything is already in place, and the work required would be minimum.
+    </p>
+    <p>
+      <a href="#" class="icon-arrow-down navigation gotoNextParagraph" title="go to next paragraph"></a>
+      <a href="#" class="icon-arrow-up navigation gotoPreviousParagraph" title="go to previous paragraph"></a>
+    </p>
   </div>
-</section>
+  <div class="span8" style="text-align:center">
+    <img src="/img/portfolio/epra_2.png"/>
+  </div>
+</div>
+<div class="row">
+  <div class="span4">
+    <p>
+      We realized the application in coordination with the client, doing it full agile all the way. We did a breakdown of the features in milestones, and while we put a duration and a pricetag on each one, it served only as an estimate, the billing being done in regard of the time spent at the end of the month.
+      <br />
+      In the end, the client felt involved and listened to all along the way, and was able to provide us feedback as soon as possible, leading to a final product that met entirely his satisfaction.
+    </p>
+    <p>
+      <a href="#" class="icon-arrow-up navigation gotoPreviousParagraph" title="go to previous paragraph"></a>
+    </p>
+  </div>
+  <div class="span8" style="text-align:center">
+    <img src="/img/portfolio/epra_3.png"/>
+  </div>
+</div>
