@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: portfolio
 project_slug: "bestofphotos"
 project_name: "BestOf Photos"
 project_description: "Create photo albums automagically from your Facebook social graph"
@@ -24,81 +24,59 @@ body_class: "portfolio_detail"
 excerpt: "BestOf Photos analyse your Facebook Social Graph to help you building your photos albums."
 ---
 
-<section class="content project_name">
-  <div class="container">
-    <div class="row">
-      <div class="span12">
-        <h1>{{page.project_name}}</h1>
-      </div>
-    </div>
+<div class="row">
+  <div class="span4">
+    <p class="timeframe">date: <span>S1 2012</span></p>
+    <p class="tags">tags: <span>{{ page.tags | join:', ' }}</span></p>
+    <a href="http://bestofphotos.herokuapp.com" target="_blank" class="featured"><i class="icon-angle-right"></i> Visit their website</a>
+    <strong class="intro">The concept</strong>
+    <p>
+      BestOf Photos analyse your Facebook Social Graph to help you building your photos albums.
+      <br/>
+      With a secret algorithm which will analyse your relationships, tags, likes and comments, the service will be available to find your 5 best friends and propose you an automate special photo albums built upon <strong>your interactions</strong> with theses 5 best friends.
+      <br/>
+      The website is available in French and in English.
+    </p>
+    <strong class="intro">The problem</strong>
+    <p>
+      Gathering and analysing lots of data can be a tough job, mainly at scale and with the Facebook API.
+    </p>
+    <p>
+      <a href="#" class="icon-arrow-down navigation gotoNextParagraph" title="go to next paragraph"></a>
+    </p>
   </div>
-</section>
-<section class="content project_description">
-  <div class="container">
-    <div class="row">
-      <div class="span12">
-        <h2>{{page.project_description}}</h2>
-      </div>
-    </div>
+  <div class="span8" style="text-align:center;">
+    <img src="/img/portfolio/bestofphotos_1.png" class="intro" />
   </div>
-</section>
-<section class="content realcontent">
-  <div class="container">
-    <div class="row">
-      <div class="span4">
-        <p class="timeframe">date: <span>S1 2012</span></p>
-        <p class="tags">tags: <span>{{ page.tags | join:', ' }}</span></p>
-        <a href="http://bestofphotos.herokuapp.com" target="_blank" class="featured"><i class="icon-angle-right"></i> Visit their website</a>
-        <strong class="intro">The concept</strong>
-        <p>
-          BestOf Photos analyse your Facebook Social Graph to help you building your photos albums.
-          <br/>
-          With a secret algorithm which will analyse your relationships, tags, likes and comments, the service will be available to find your 5 best friends and propose you an automate special photo albums built upon <strong>your interactions</strong> with theses 5 best friends.
-          <br/>
-          The website is available in French and in English.
-        </p>
-        <strong class="intro">The problem</strong>
-        <p>
-          Gathering and analysing lots of data can be a tough job, mainly at scale and with the Facebook API.
-        </p>
-        <p>
-          <a href="#" class="icon-arrow-down navigation gotoNextParagraph" title="go to next paragraph"></a>
-        </p>
-      </div>
-      <div class="span8" style="text-align:center;">
-        <img src="/img/portfolio/bestofphotos_1.png" class="intro" />
-      </div>
-    </div>
-    <div class="row">
-      <div class="span4">
-        <strong class="intro">The solution</strong>
-        <p>
-          On the Back End, Novelys provided its knowledge of <strong>NoSQL</strong> databases (such as <strong>MongoDB</strong> and <strong>Redis</strong>), its knowledge of fetching data through the <strong>Facebook API</strong> and analysing lots of data (sometimes called <strong>Big Data</strong>) to help bootstrap the BestOf Photos project and have an acceptable build time for each photobook.
-          <br/>
-          Each book is then rendered as PDF on the server and sent to the printing partner.
-        </p>
-        <p>
-          <a href="#" class="icon-arrow-up navigation gotoPreviousParagraph" title="go to previous paragraph"></a>
-        </p>
-      </div>
-      <div class="span8" style="text-align:center;">
-        <img src="/img/portfolio/bestofphotos_2.png" />
-      </div>
-    </div>
-    <div class="row">
-      <div class="span4">
-        <p>
-          On the Front End, using <strong>HTML5</strong>, <strong>CSS3</strong> and javascript, we help bootstrapped the main user interface, which is about flipping your newly created book, as you would do it with the real object.
-          <br/>
-          And yes, all the UI works on <strong>touch</strong> enabled devices, like the iPad.
-        </p>
-        <p>
-          <a href="#" class="icon-arrow-up navigation gotoPreviousParagraph" title="go to previous paragraph"></a>
-        </p>
-      </div>
-      <div class="span8" style="text-align:center;">
-        <img src="/img/portfolio/bestofphotos_3.png" />
-      </div>
-    </div>
+</div>
+<div class="row">
+  <div class="span4">
+    <strong class="intro">The solution</strong>
+    <p>
+      On the Back End, Novelys provided its knowledge of <strong>NoSQL</strong> databases (such as <strong>MongoDB</strong> and <strong>Redis</strong>), its knowledge of fetching data through the <strong>Facebook API</strong> and analysing lots of data (sometimes called <strong>Big Data</strong>) to help bootstrap the BestOf Photos project and have an acceptable build time for each photobook.
+      <br/>
+      Each book is then rendered as PDF on the server and sent to the printing partner.
+    </p>
+    <p>
+      <a href="#" class="icon-arrow-up navigation gotoPreviousParagraph" title="go to previous paragraph"></a>
+    </p>
   </div>
-</section>
+  <div class="span8" style="text-align:center;">
+    <img src="/img/portfolio/bestofphotos_2.png" />
+  </div>
+</div>
+<div class="row">
+  <div class="span4">
+    <p>
+      On the Front End, using <strong>HTML5</strong>, <strong>CSS3</strong> and javascript, we help bootstrapped the main user interface, which is about flipping your newly created book, as you would do it with the real object.
+      <br/>
+      And yes, all the UI works on <strong>touch</strong> enabled devices, like the iPad.
+    </p>
+    <p>
+      <a href="#" class="icon-arrow-up navigation gotoPreviousParagraph" title="go to previous paragraph"></a>
+    </p>
+  </div>
+  <div class="span8" style="text-align:center;">
+    <img src="/img/portfolio/bestofphotos_3.png" />
+  </div>
+</div>
