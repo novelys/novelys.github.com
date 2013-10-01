@@ -1,0 +1,78 @@
+---
+layout: default
+project_slug: "dieppe"
+project_name: "Dieppe"
+project_description: "The City of Dieppe website, adapted to a touch-based navigation."
+title:  "City of Dieppe"
+date:   2013-09-30 12:00:00
+tags:
+  - Backbone.js, Touch
+  - Ruby
+  - Rails
+  - Responsive Web Design
+permalink: /portfolio/dieppe.html
+body_class: "portfolio_detail"
+categories:
+  - portfolio
+excerpt: "Novelys developed a few years ago a website for the City of Dieppe, presenting news and informations for the citizens. The city was looking to renew the design of this website, and improve its user experience on touch devices such as tablets."
+---
+
+<section class="content project_name">
+  <div class="container">
+    <div class="row">
+      <div class="span12">
+        <h1>{{page.project_name}}</h1>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="content project_description">
+  <div class="container">
+    <div class="row">
+      <div class="span12">
+        <h2>{{page.project_description}}</h2>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="content realcontent">
+  <div class="container">
+    <div class="row">
+      <div class="span4">
+        <p class="timeframe">date: <span>from 2008</span></p>
+        <p class="tags">tags: <span>{{ page.tags | join:', ' }}</span></p>
+        <a href="http://www.dieppe.fr" target="_blank" class="featured"><i class="icon-angle-right"></i> Visit their website</a>
+        <strong class="intro">The problem</strong>
+        <p>
+          Novelys developed a few years ago a website for the City of Dieppe, presenting news and informations for the citizens. The city was looking to renew the design of this website, and improve its user experience on touch devices such as tablets.
+        </p>
+        <strong class="intro">The solution</strong>
+        <p>
+          Novelys rewrote all of the frontend code to have a single-page javascript application, using <a href="http://backbonejs.org/" target="_blank">Backbone.js</a>. This change was made to improve the overall navigation experience, and have a fast and responsive website.
+        </p>
+        <p>
+          The website also makes great use of the responsive web design techniques, to adapt to the different tablet sizes and orientations.
+        </p>
+        <p>
+          <a href="#" class="icon-arrow-down navigation gotoNextParagraph" title="go to next paragraph"></a>
+        </p>
+      </div>
+      <div class="span8">
+        <img src="/img/portfolio/dieppe_1.png" class="intro" />
+      </div>
+    </div>
+    <div class="row">
+      <div class="span4">
+        <p>
+          In order to be touch-friendly, we also used the <a href="http://swipejs.com/" target="_blank">Swipe.js</a> library. It allows the user to slide between each headlines or other pages and greatly improves the user experience on tablets.
+        </p>
+        <p>
+          <a href="#" class="icon-arrow-up navigation gotoPreviousParagraph" title="go to previous paragraph"></a>
+          <a href="#" class="icon-arrow-down navigation gotoNextParagraph" title="go to next paragraph"></a>
+        </p>
+      </div>
+      <div class="span8">
+        <img src="/img/portfolio/dieppe_2.png"/>
+      </div>
+    </div>
+</section>
