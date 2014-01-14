@@ -14,4 +14,4 @@ The city provides an XML file written with a specific schema in mind.
 
 Today, we're very proud to give you [fetedelamusique-strasbourg.eu](http://www.fetedelamusique-strasbourg.eu) which display the informations contained in the official XML file. You can also add your very own music band information.
 
-Of course, as the majority of our wbe projects these days, the website is completely responsive so you can consult the informations while strolling during World Music Day :)
+Of course, as the majority of our web projects these days, the website is completely responsive so you can consult the informations while strolling during World Music Day :)

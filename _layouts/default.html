@@ -32,7 +32,11 @@
     <meta property="og:description" content="Novelys - Ruby on Rails development - Strasbourg, France">
     {% endif %}
     <meta property="og:type" content="website" />
+    {% if page.fb_image_url %}
+    <meta property="og:image" content="http://www.novelys.com/img/portfolio/{{ page.fb_image_url }}" />
+    {% else %}
     <meta property="og:image" content="http://www.novelys.com/img/logo.png" />
+    {% endif %}
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>

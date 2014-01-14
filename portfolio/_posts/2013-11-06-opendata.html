@@ -1,0 +1,86 @@
+---
+layout: portfolio
+project_slug: "opendata"
+project_name: "Open Data apps"
+project_description: "A collection of Open Data driven apps"
+title:  "Open Data apps built at Novelys"
+date:   2013-11-06 13:35:00
+tags:
+  - Ruby on Rails frontend, API
+  - Ruby
+  - Rails
+  - Responsive Web Design
+  - i18n
+  - MongoDB
+  - EmberJS
+  - Geoloc
+permalink: /portfolio/opendata.html
+body_class: "portfolio_detail"
+categories:
+  - portfolio
+excerpt: "Through its Culture, Novelys always tried to be a good citizen of the City and always worked with various APIs. That's why building application using Open Data is completely normal for us."
+fb_image_url: "monprochainbus_fb.png"
+---
+
+<div class="row">
+  <div class="span4">
+    <p class="timeframe">date: <span>from october 2013 until now</span></p>
+    <p class="tags">tags: <span>{{ page.tags | join:', ' }}</span></p>
+    <a href="http://www.monprochainbus.eu" target="_blank" class="featured"><i class="icon-angle-right"></i> Visit the website</a>
+    <strong class="intro">MonProchainBus.eu</strong>
+    <p>
+      When you visit <a href="http://www.monprochainbus.eu">MonProchainBus.eu</a>, we ask your browser to provide your <strong>GPS coordinates</strong> which are used to query the nearest bus/tram stations. We then display the 3 next arrivals for each of these stations. Even tough the experience is far better with a phone, you can visit the website using your regular desktop browser.
+    </p>
+    <p>Novelys won the <a href="http://www.europtimist.eu/actualites/resultats-du-concours-open-data-et-felicitations-aux-gagnants">"Vie Quotidienne" (Daily Life) award</a> during the <strong>Open Data</strong> contest organized by the City of Strasbourg.</p>
+    <p>
+      Technically, we used a mix of MongoDB, EmberJS, Ruby and Rails to build this app.
+    </p>
+    <p>
+      The data comes from a SOAP web service provided by the <a href="http://www.cts-strasbourg.eu/">CTS</a> (Strasbourg public transporation company).
+    </p>
+    <p>
+      <a href="#" class="icon-arrow-down navigation gotoNextParagraph" title="go to next paragraph"></a>
+    </p>
+  </div>
+  <div class="span8">
+    <img src="/img/portfolio/monprochainbus.png" class="intro" />
+  </div>
+</div>
+<div class="row">
+  <div class="span4">
+    <p class="timeframe">date: <span>from february 2013 until now</span></p>
+    <p class="tags">tags: <span>{{ page.tags | join:', ' }}</span></p>
+    <a href="http://www.parking-strasbourg.eu" target="_blank" class="featured"><i class="icon-angle-right"></i> Visit the website</a>
+    <strong class="intro">Parking Strasbourg</strong>
+    <p>
+      <a href="http://www.parking-strasbourg.eu">Parking-Strasbourg.eu</a> display the list of <strong>parking of Strasbourg</strong> and their <strong>filling ratio</strong>. As usual, the website is completely built with <em>"Responsive Web Design"</em> techniques, meaning it will display useful data on a smartphone, a tablet or a regular desktop browser.
+    </p>
+    <p>
+      Notice that we store all the data we extract from the original data source (we query the data source every 5 minutes). We can then build new data (sometimes called <strong>Data Mining</strong>, but it's a little presomptuous for this little app). For example, we display a simple <strong>trend</strong> metrics (with the inclined arrows). We calculate this trend from the past 30 minutes of data we have.
+    </p>
+      And because we've gathered nearly a full year of data, we can go a little step further by building <strong>predictions</strong>.
+    <p>
+      <a href="#" class="icon-arrow-up navigation gotoPreviousParagraph" title="go to previous paragraph"></a>
+      <a href="#" class="icon-arrow-down navigation gotoNextParagraph" title="go to next paragraph"></a>
+    </p>
+  </div>
+  <div class="span8">
+    <img src="/img/portfolio/parkingstrasbourg.png"/>
+  </div>
+</div>
+<div class="row">
+  <div class="span4">
+    <p class="timeframe">date: <span>during june 2013</span></p>
+    <p class="tags">tags: <span>{{ page.tags | join:', ' }}</span></p>
+    <a href="http://www.fetedelamusique-strasbourg.eu" target="_blank" class="featured"><i class="icon-angle-right"></i> Visit the website</a>
+    <strong class="intro">FeteDeLaMusique-Strasbourg.eu</strong>
+    <p>This website display the various spots where music band will do their show during the <strong>World Music Day</strong> on a map using the <strong>Google Maps</strong> technology.</p>
+    <p>The app is built upon an <strong>XML API</strong> provided by the City of Strasbourg. Our webapp provides the possibility of enriching this source using the power of the <strong>crowd</strong> :)</p>
+    <p>
+      <a href="#" class="icon-arrow-up navigation gotoPreviousParagraph" title="go to previous paragraph"></a>
+    </p>
+  </div>
+  <div class="span8">
+    <img src="/img/portfolio/fetedelamusiquestrasbourg.png"/>
+  </div>
+</div>
