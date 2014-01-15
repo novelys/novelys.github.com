@@ -27,7 +27,7 @@
 
     <meta property="og:title" content="Novelys - {{page.title}}" />
     {% if page.excerpt %}
-    <meta property="og:description" content="Novelys - {{ page.excerpt | escape }}">
+    <meta property="og:description" content="Novelys - {{ page.excerpt | strip_html }}">
     {% else %}
     <meta property="og:description" content="Novelys - Ruby on Rails development - Strasbourg, France">
     {% endif %}
