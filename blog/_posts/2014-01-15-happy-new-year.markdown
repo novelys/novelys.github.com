@@ -6,7 +6,7 @@ categories: blog
 tags: opendata arte arte+7
 body_class: "blog"
 comments: true
-fb_image_url: "/img/blog/2014cake_fb.png"
+fb_image_path: "/img/blog/2014cake_fb.png"
 ---
 
 The whole Novelys Team wish you an happy New Year!
