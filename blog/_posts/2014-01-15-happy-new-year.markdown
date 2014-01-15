@@ -9,7 +9,7 @@ comments: true
 fb_image_path: "/img/blog/2014cake_fb.png"
 ---
 
-The whole Novelys Team wish you an happy New Year!
+The whole Novelys Team wishes you an happy New Year!
 
 If you're one of our lucky customer, you will receive in the coming days this beautiful piece of eatable art. But don't be desperate, everything is still possible in 2014, [contact us](/contact.html) and we'll see how we can work together!
 
