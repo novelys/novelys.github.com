@@ -13,7 +13,7 @@ At Novelys, we have been developping a sales book for <strong>Eckes-Granini</str
 
 ### Why start over?
 
-The application in its previous version was starting to get old: while it was almost always running on the latest versions of Ruby on Rails, the front end was handled by both Rails and `prototype.js`, and became quite huge over the years. At the same time, better technologies became available to solve the original problem of making the salesbook available offline. And it was a classic case of a server side application, but `prototype.js` was doing all the heavy lifting in terms of interface and front-end logic.
+The application in its previous version was starting to get old. While it was almost always running on the latest versions of Ruby on Rails, the front end was handled by both Rails and `prototype.js`, and became quite huge over the years. Anyone remember Google Gears? It was used in the first versions, when it was the only way to make web application available offline. At the same time, better technologies became available to solve the original problem of making the salesbook available offline. And it was a classic case of a server side application, but `prototype.js` was doing all the heavy lifting in terms of interface and front-end logic.
 
 It made complete sense to start over and split the application in two: the backend on one side exposing an API, and the client on the other side, consuming this API. The backend is still in Rails, and looks pretty much the same as before, though lots of code was removed since most of the logic was moved client-side. The API being mostly CRUD-oriented, it was up and running pretty quickly.
 
