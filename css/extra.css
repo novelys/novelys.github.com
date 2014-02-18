@@ -383,11 +383,17 @@ footer .social {
       footer .social li .rounded.github span, footer .social li .rounded.slideshare span {
         top: 10px;
         left: 12px; }
+      footer .social li .rounded.rss span {
+        top: 8px;
+        left: 15px; }
       footer .social li .rounded.facebook:hover {
         background-color: #3b5998;
         color: white; }
       footer .social li .rounded.twitter:hover {
         background-color: #4099ff;
+        color: white; }
+      footer .social li .rounded.rss:hover {
+        background-color: #ff6600;
         color: white; }
       footer .social li .rounded.github:hover, footer .social li .rounded.slideshare:hover {
         background-color: #fafafa;
