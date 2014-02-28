@@ -1,7 +1,7 @@
 ---
 layout: default
 title:  "Building an app with Ember.js using HTML5 Storage APIs"
-date:   2014-02-15 12:00:00
+date:   2014-02-28 12:00:00
 categories: blog
 tags: salesbook emberjs rails
 body_class: "blog"
