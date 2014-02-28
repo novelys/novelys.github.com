@@ -37,7 +37,7 @@ In the end, we are pretty satisfied with what we ended up building and what we e
 
 It was also interesting to toy with some of the latest HTML5 APIs. The different choices available can all make sense depending on what you are trying to achieve and the constraints you have, so in the end it is up to you. But it is always good to see the web being able to do more than it previously was :)
 
-Right now, the application is being used by a bit more than a hundred of users, and gives access to almost 500 documents, going from PDF or Office files to big videos.
+Right now, the application is being used by a bit more than a hundred of users, and gives access to almost 500 documents going from PDF or Office files to big videos, for a total size of about 1 Go.
 
 We would also like to thank <a href="https://github.com/ebidel">Eric Bidelman</a> for his work related to the FS APIs. He made both the polyfill mentionned earlier and `filer.js`, and wrote <a href="http://www.html5rocks.com/en/tutorials/file/filesystem/">a comprehensive</a> article on the topic.
 
