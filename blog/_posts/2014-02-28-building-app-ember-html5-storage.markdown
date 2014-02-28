@@ -9,7 +9,7 @@ comments: true
 fb_image_path: "/img/blog/bdv-ember.png"
 ---
 
-At Novelys, we have been developping a sales book for <strong>Eckes-Granini</strong> for a few years. At some point, they contacted us regarding some features they wanted to add to the application. With the client, we decided it was best to start from scratch, remove the cruft, and benefit from the best technologies that were now available. This post is going to dive into some of the technological choices we made and why.
+At Novelys, we have been developing and maintaining <a href="http://www.novelys.com/portfolio/salesbook.html">a sales book for <strong>Eckes-Granini</strong></a> for a few years. At some point, they contacted us regarding some features they wanted to add to the application. With the client, we decided it was best to start from scratch, remove the cruft, and benefit from the best technologies that were now available. This post is going to dive into some of the technological choices we made and why.
 
 ### Why start over?
 
@@ -36,6 +36,8 @@ We felt that the `FileSystem` APIs were more suited to what we wanted to achieve
 In the end, we are pretty satisfied with what we ended up building and what we explored: for starters, `ember.js` is an impressive piece of technology. There is room for improvement: `ember-data` is still in beta, and `queryParams` support in the router is experimental, among others. That being said, you can do some pretty serious stuff with, and it us moving in a good direction at a right pace. We will definitely use it again.
 
 It was also interesting to toy with some of the latest HTML5 APIs. The different choices available can all make sense depending on what you are trying to achieve and the constraints you have, so in the end it is up to you. But it is always good to see the web being able to do more than it previously was :)
+
+Right now, the application is being used by a bit more than a hundred of users, and gives access to almost 500 documents, going from PDF or Office files to big videos.
 
 We would also like to thank <a href="https://github.com/ebidel">Eric Bidelman</a> for his work related to the FS APIs. He made both the polyfill mentionned earlier and `filer.js`, and wrote <a href="http://www.html5rocks.com/en/tutorials/file/filesystem/">a comprehensive</a> article on the topic.
 
