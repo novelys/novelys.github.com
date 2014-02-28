@@ -39,7 +39,7 @@ It was also interesting to toy with some of the latest HTML5 APIs. The different
 
 Right now, the application is being used by a bit more than a hundred of users, and gives access to almost 500 documents going from PDF or Office files to big videos, for a total size of about 1 Gb.
 
-We would also like to thank <a href="https://github.com/ebidel">Eric Bidelman</a> for his work related to the FS APIs. He made both the polyfill mentionned earlier and `filer.js`, and wrote <a href="http://www.html5rocks.com/en/tutorials/file/filesystem/">a comprehensive</a> article on the topic.
+We would like to thank the <a href="http://emberjs.com">Ember.js</a> <a href="https://github.com/emberjs/ember.js/graphs/contributors">many contributors</a> as well as <a href="https://github.com/ebidel">Eric Bidelman</a> for his work related to the FS APIs. He made both the polyfill mentionned earlier and `filer.js`, and wrote <a href="http://www.html5rocks.com/en/tutorials/file/filesystem/">a comprehensive</a> article on the topic.
 
 And for those who are not satisfied with the FS APIs, Mozilla has released <a href="https://github.com/mozilla/localForage">localForage</a> a few days ago, which wraps `localStorage`/`IndexedDB`/`WebSQL` in a unified API.
 
