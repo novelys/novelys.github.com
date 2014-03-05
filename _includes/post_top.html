@@ -11,6 +11,17 @@
         {{ post.date | date: "%Y" }}
       </div>
     </div>
+    <div class="author">
+      {% if post.author == 'ksol' %}
+        By <a href="https://twitter.com/ksol">Kevin Soltysiak</a>
+      {% elsif post.author == 'suruja' %}
+        By Sébastien Azimi
+      {% elsif post.author == 'yannski' %}
+        By <a href="https://twitter.com/yannski">Yann Klis</a>
+      {% else %}
+        By <a href="https://twitter.com/novelys">Novelys</a>
+      {% endif %}
+    </div>
   </div>
   <div class="span8 contentblock">
       <h2 class="title">

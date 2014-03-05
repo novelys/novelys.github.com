@@ -6,6 +6,7 @@ categories: blog
 tags: opendata rwd
 body_class: "blog"
 comments: true
+author: yannski
 ---
 
 The [city of Strasbourg](http://www.strasbourg.eu) has <a href="http://www.strasbourg.eu/ma-situation/professionnel/open-data">liberated some data sets</a> a few weeks ago. This is what is called [OpenData](http://en.wikipedia.org/wiki/Open_data): some public entities publish some data sets under a liberal license so everybody can use them and integrate them freely in some external software.

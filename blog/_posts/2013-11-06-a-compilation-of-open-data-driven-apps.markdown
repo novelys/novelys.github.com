@@ -6,6 +6,7 @@ categories: blog
 tags: opendata rwd
 body_class: "blog"
 comments: true
+author: yannski
 ---
 
 At [Novelys](http://www.novelys.com), we always try to be good citizens of the City. And part of our work implies working with various APIs, from Facebook, Twitter, LinkedIn, EventBrite or some various other data providers.

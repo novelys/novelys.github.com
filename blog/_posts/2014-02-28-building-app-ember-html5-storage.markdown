@@ -7,6 +7,7 @@ tags: salesbook emberjs rails
 body_class: "blog"
 comments: true
 fb_image_path: "/img/blog/bdv-ember.png"
+author: ksol
 ---
 
 At Novelys, we have been developing and maintaining <a href="http://www.novelys.com/portfolio/salesbook.html">a sales book for <strong>Eckes-Granini</strong></a> for a few years. At some point, they contacted us regarding some features they wanted to add to the application. With the client, we decided it was best to start from scratch, remove the cruft, and benefit from the best technologies that were now available. This post is going to dive into some of the technological choices we made and why.

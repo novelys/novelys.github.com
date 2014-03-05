@@ -6,6 +6,7 @@ categories: blog
 tags: opendata rwd
 body_class: "blog"
 comments: true
+author: yannski
 ---
 
 The [city of Strasbourg](http://www.strasbourg.eu) has liberated more data sets under their Open Data initiative umbrella. This time, it's about the World Music Day and the music bands locations.
