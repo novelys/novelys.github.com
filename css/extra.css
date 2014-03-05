@@ -218,7 +218,8 @@ a {
     .snav ul li a {
       font-weight: 200;
       font-size: 20px;
-      line-height: 20px; }
+      line-height: 20px;
+      color: black; }
       .snav ul li a:visited {
         font-weight: 200;
         font-size: 20px;
