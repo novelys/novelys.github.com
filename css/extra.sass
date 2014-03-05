@@ -201,6 +201,17 @@ footer
   background-color: rgb(250, 250, 250)
   background-image: none
 
+
+a
+  text-decoration: none !important
+  -moz-transition: color 0.4s
+  -webkit-transition: color 0.4s
+  -o-transition: color 0.4s
+  transition: color 0.4s
+  &:hover, &.current
+    text-decoration: none !important
+    color: #FFBA52 !important
+
 .snav
   position: absolute
   top: 16px
@@ -215,15 +226,11 @@ footer
     li
       float: left
       padding-left: 50px
-      &.current a
-        text-decoration: underline
       a
-        color: black
         font-weight: 200
         font-size: 20px
         line-height: 20px
         &:visited
-          color: black
           font-weight: 200
           font-size: 20px
           line-height: 20px
@@ -256,7 +263,6 @@ img#logo
 #intro
   .span12.targetresize
     position: relative
-  .container
 
 #title
   position: absolute
@@ -341,7 +347,7 @@ article
   .title
     margin-top: 0
     line-height: 26px
-    a, a:hover, a:visited, a:focus
+    a, a:visited
       color: black
   img
     padding: 10px 0

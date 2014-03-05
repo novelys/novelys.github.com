@@ -59,14 +59,34 @@
           </div>
           <div class="snav nav-left">
             <ul class="unstyled">
-              <li><a href="/vision.html">Vision</a></li>
-              <li><a href="/portfolio.html">Portfolio</a></li>
+              {% if page.url == "/vision.html" %}
+                <li class="top-nav-item"><a class="current" href="/vision.html">Vision</a></li>
+              {% else %}
+                <li class="top-nav-item"><a href="/vision.html">Vision</a></li>
+              {% endif %}
+
+              {% assign portfoliourl = page.url | truncate:10,'' %}
+              {% if portfoliourl == "/portfolio" %}
+                <li class="top-nav-item"><a class="current" href="/portfolio.html">Portfolio</a></li>
+              {% else %}
+                <li class="top-nav-item"><a href="/portfolio.html">Portfolio</a></li>
+              {% endif %}
             </ul>
           </div>
           <div class="snav nav-right">
             <ul class="unstyled">
-              <li><a href="/blog/index.html">Blog</a></li>
-              <li><a href="/contact.html">Contact</a></li>
+              {% assign blogurl = page.url | truncate:5,'' %}
+              {% if blogurl == "/blog" %}
+                <li class="top-nav-item"><a class="current" href="/blog/index.html">Blog</a></li>
+              {% else %}
+                <li class="top-nav-item"><a href="/blog/index.html">Blog</a></li>
+              {% endif %}
+
+              {% if page.url == "/contact.html" %}
+                <li class="top-nav-item"><a class="current" href="/contact.html">Contact</a></li>
+              {% else %}
+                <li class="top-nav-item"><a href="/contact.html">Contact</a></li>
+              {% endif %}
             </ul>
           </div>
         </div>

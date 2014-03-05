@@ -192,6 +192,16 @@ footer {
   background-color: #fafafa;
   background-image: none; }
 
+a {
+  text-decoration: none !important;
+  -moz-transition: color 0.4s;
+  -webkit-transition: color 0.4s;
+  -o-transition: color 0.4s;
+  transition: color 0.4s; }
+  a:hover, a.current {
+    text-decoration: none !important;
+    color: #ffba52 !important; }
+
 .snav {
   position: absolute;
   top: 16px;
@@ -205,15 +215,11 @@ footer {
   .snav ul li {
     float: left;
     padding-left: 50px; }
-    .snav ul li.current a {
-      text-decoration: underline; }
     .snav ul li a {
-      color: black;
       font-weight: 200;
       font-size: 20px;
       line-height: 20px; }
       .snav ul li a:visited {
-        color: black;
         font-weight: 200;
         font-size: 20px;
         line-height: 20px; }
@@ -327,7 +333,7 @@ article .contentblock {
 article .title {
   margin-top: 0;
   line-height: 26px; }
-  article .title a, article .title a:hover, article .title a:visited, article .title a:focus {
+  article .title a, article .title a:visited {
     color: black; }
 article img {
   padding: 10px 0;
