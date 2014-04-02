@@ -534,20 +534,21 @@ footer
   .snav
     position: static
     float: left
-    padding-top: 20px
+    padding-top: 10px
     &.nav-left, &.nav-right
       margin-left: 0
       width: 100%
     ul
       padding: 0
-      margin: 0
       text-align: center
+      &, &.unstyled
+        margin: 0
       li
         padding-left: 0
         width: 50%
   body
     &.home .bg, &.contact .bg, &.portfolio .bg, &.portfolio_detail .bg, &.vision .bg
-      top: 155px
+      top: 132px
       height: 351px
       min-height: 351px
   #title
@@ -577,9 +578,15 @@ footer
   .cursive
     font-size: 60px
     line-height: 60px
-  .blog .date
-    float: left
-    margin-right: 10px
+  .blog
+    .dateblock
+      height: 85px
+    .author
+      clear: none
+      margin: 0
+    .date
+      float: left
+      margin-right: 10px
   article
     &.row
       margin-left: 10px
