@@ -75,6 +75,12 @@
           </div>
           <div class="snav nav-right">
             <ul class="unstyled">
+              {% if page.url == "/team.html" %}
+                <li class="top-nav-item"><a class="current" href="/team.html">Team & Rates</a></li>
+              {% else %}
+                <li class="top-nav-item"><a href="/team.html">Team & Rates</a></li>
+              {% endif %}
+
               {% assign blogurl = page.url | truncate:5,'' %}
               {% if blogurl == "/blog" %}
                 <li class="top-nav-item"><a class="current" href="/blog/index.html">Blog</a></li>
@@ -137,12 +143,12 @@
                 </li>
                 <li class="clearfix">
                   <div class="pull-left icon"><span class="icon-phone"></span></div>
-                  <div class="pull-left">+33 (0)8 05 69 60 67</div>
+                  <div class="pull-left">+33 (0)6 75 20 41 30</div>
                 </li>
                 <li class="clearfix">
                   <div class="pull-left icon"><span class="icon-map-marker"></span></div>
                   <div class="pull-left">
-                      15, Route du Rhin
+                      15 Avenue du Rhin
                       <br/>
                       67100 STRASBOURG, FRANCE
                   </div>
