@@ -20,10 +20,10 @@ If you're one of our lucky customer, you will receive in the coming days this be
 We cannot list here all the projects we worked on in 2013, but here is a little selection.
 
 <div class="row-fluid">
-  <div class="span2">
+  <div class="col-xs-2">
     <a href="/portfolio/abcalsace.html"><img src="/img/home/abcalsace.png" /></a>
   </div>
-  <div class="span8">
+  <div class="col-xs-8">
     <p style="padding: 10px 0;">
       <a href="/portfolio/abcalsace.html">ABCDaire d'Alsace</a>
       <br/>
@@ -35,10 +35,10 @@ We cannot list here all the projects we worked on in 2013, but here is a little 
 </div>
 
 <div class="row-fluid">
-  <div class="span2">
+  <div class="col-xs-2">
     <a href="/portfolio/artetvguide.html"><img src="/img/home/artetvguide.png" /></a>
   </div>
-  <div class="span8">
+  <div class="col-xs-8">
     <p style="padding: 10px 0;">
       <a href="/portfolio/artetvguide.html">ARTE's TVGuide</a>
       <br/>
@@ -52,10 +52,10 @@ We cannot list here all the projects we worked on in 2013, but here is a little 
 </div>
 
 <div class="row-fluid">
-  <div class="span2">
+  <div class="col-xs-2">
     <a href="/portfolio/opendata.html"><img src="/img/home/opendata.png" /></a>
   </div>
-  <div class="span8">
+  <div class="col-xs-8">
     <p style="padding: 10px 0;">
       In december 2013, we won the <a href="http://www.europtimist.eu/actualites/resultats-du-concours-open-data-et-felicitations-aux-gagnants" target="_blank">"Daily Life award"</a> in the Open Data contest organized by the City of Strasbourg with <a href="http://www.monprochainbus.eu" target="_blank">MonProchainBus</a>. We're very proud of this prize because it validates our engagement in <a href="/portfolio/opendata.html">Open Data</a>.
     </p>

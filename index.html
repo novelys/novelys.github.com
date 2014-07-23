@@ -6,7 +6,7 @@ body_class: "home"
 <section id="intro" class="bg targetresize">
   <div class="container">
     <div class="row">
-      <div class="span12 targetresize">
+      <div class="col-xs-12 targetresize">
         <div id="title">
           <p class="subs"><span>We make web & mobile apps.</span></p>
         </div>
@@ -21,7 +21,7 @@ body_class: "home"
 <section class="content">
   <div class="container">
     <div class="row">
-      <div class="span8">
+      <div class="col-xs-12 col-md-8">
         <h1>What do we do?</h1>
         <p>
           We create websites, <strong>web applications</strong>, <strong>mobile web</strong> applications and native mobile applications. We can do it remotely in our office in Strasbourg, France, or we can do it on site, in your office.
@@ -54,7 +54,7 @@ body_class: "home"
         <h1>What are the technologies we use?</h1>
         <p>
           We use <strong>rapid</strong> prototyping technologies to quickly transform your ideas into a live application. Technologies such as <a href="http://www.ruby-lang.org" target="_blank">Ruby</a>, <a href="http://www.rubyonrails.org" target="_blank">Rails</a>, <a href="http://aws.amazon.com" target="_blank">Amazon Web Services</a>, <a href="http://www.heroku.com" target="_blank">Heroku</a>, <a href="http://www.mongodb.org" target="_blank">MongoDB</a> or <a href="http://www.redis.io" target="_blank">Redis</a>, Javascript (with <a href="http://backbonejs.org/" target="_blank">Backbone.js</a> or <a href="http://nodejs.org" target="_blank">NodeJS</a>) are part of our standard toolbox. We then maintain these applications through the time. We work with some customers for years now!
-          <ul class="inline logos">
+          <ul class="list-inline logos">
             <li><img src="/img/logo/ruby.resized.png" alt="Ruby" title="Ruby" /></li>
             <li><img src="/img/logo/rubyonrails.resized.png" alt="Ruby on Rails" title="Ruby on Rails" /></li>
             <li><img src="/img/logo/amazonwebservices.resized.png" alt="Amazon Web Services" title="Amazon Web Services" /></li>
@@ -65,7 +65,7 @@ body_class: "home"
           </ul>
         </p>
       </div>
-      <div class="span4 sidebar">
+      <div class="col-xs-12 col-md-4 sidebar">
         <div class="inner">
 
           <h1 class="cursive">
@@ -88,14 +88,14 @@ body_class: "home"
 <section class="portfolio">
   <div class="container">
     <div class="row">
-      <div class="span12">
+      <div class="col-xs-12">
         <h1>A selection of our latest work</h1>
       </div>
     </div>
     <div class="row">
-      <ul class="thumbnails">
+      <ul class="list-unstyled thumbnails">
         {% for post in site.categories.portfolio limit:8 %}
-        <li class="span3">
+        <li class="col-xs-12 col-md-3">
           <a href="{{post.url}}" class="thumbnail">
             <img src="/img/home/{{post.project_slug}}.png" />
             <h3>{{post.project_name}}</h3>

@@ -2,7 +2,12 @@ body {
   font-family: "proxima-nova", sans-serif;
   font-weight: 300;
   background-color: #fafafa;
-  font-size: 16px; }
+  margin-top: 40px; }
+
+section {
+  padding: 40px 0; }
+  section.content h1 {
+    margin-top: 0; }
 
 a {
   color: #177491;
@@ -110,18 +115,17 @@ body.home ul.thumbnails {
       font-weight: 300; }
 body.blog .trenches {
   margin-bottom: 40px; }
-  body.blog .trenches .span4 .cursive {
+  body.blog .trenches .col-xs-4 .cursive {
     text-align: right; }
-  body.blog .trenches .span8 {
+  body.blog .trenches .col-xs-8 {
     margin-left: 0; }
-    body.blog .trenches .span8 .cursive {
+    body.blog .trenches .col-xs-8 .cursive {
       text-align: left; }
 body.contact .content, body.portfolio .content, body.vision .content, body.team .content {
   margin-top: 430px; }
   body.contact .content .container .row .addressblock p, body.portfolio .content .container .row .addressblock p, body.vision .content .container .row .addressblock p, body.team .content .container .row .addressblock p {
     text-align: right; }
 body.contact .bg h1, body.portfolio .bg h1, body.vision .bg h1, body.team .bg h1 {
-  text-align: right;
   color: white;
   margin-top: 150px; }
 body.portfolio .intro {
@@ -210,7 +214,7 @@ a {
     margin-left: -400px; }
   .snav.nav-right {
     margin-left: 80px; }
-  .snav ul.unstyled {
+  .snav ul.list-unstyled {
     margin: 0 0 10px 25px; }
   .snav ul li {
     float: left;
@@ -250,7 +254,7 @@ img#logo {
   background-attachment: fixed;
   height: 390px; }
 
-#intro .span12.targetresize {
+#intro .col-xs-12.targetresize {
   position: relative; }
 
 #title {
@@ -261,7 +265,7 @@ img#logo {
   #title p.subs {
     margin: 0;
     padding: 0;
-    display: inline;
+    display: list-inline;
     font-family: "proxima-nova", sans-serif;
     font-weight: 200;
     font-style: normal;
@@ -280,7 +284,7 @@ img#logo {
   #subtitle p.subs {
     margin: 0;
     padding: 0;
-    display: inline;
+    display: list-inline;
     font-family: "proxima-nova", sans-serif;
     font-weight: 300;
     font-style: normal;
@@ -322,18 +326,17 @@ img#logo {
   background-color: #177491;
   padding: 7px;
   font-size: 20px;
+  line-height: 0.85;
   text-align: center;
-  width: 60px;
-  height: 60px;
   float: right; }
+  .blog .date .day, .blog .date .month, .blog .date .year {
+    display: block; }
   .blog .date .month {
     font-weight: bold;
     text-transform: uppercase; }
 
 article .contentblock {
-  border-left: 1px solid #177491;
-  margin-left: 0;
-  padding-left: 20px; }
+  border-left: 1px solid #177491; }
   article .contentblock p:last-child {
     margin-bottom: 0; }
   article .contentblock a.more {
@@ -457,43 +460,40 @@ footer .social {
   #subtitle p.subs {
     font-size: 34px; } }
 @media (max-width: 767px) {
-  body {
-    padding-left: 0;
-    padding-right: 0; }
-    body.home ul.logos li {
-      width: 100%;
-      margin-left: 0; }
-      body.home ul.logos li:last-child img {
-        border-bottom: 1px solid black;
-        padding: 0 20px 40px 20px;
-        margin-bottom: 20px; }
-    body.home ul.thumbnails a.thumbnail {
-      margin: 10px;
+  body.home ul.logos li {
+    width: 100%;
+    margin-left: 0; }
+    body.home ul.logos li:last-child img {
+      border-bottom: 1px solid black;
+      padding: 0 20px 40px 20px;
+      margin-bottom: 20px; }
+  body.home ul.thumbnails a.thumbnail {
+    margin: 10px;
+    text-align: center; }
+  body.home .sidebar .inner {
+    border-left: 0; }
+  body.contact .bg h1, body.portfolio .bg h1, body.portfolio_detail .bg h1, body.vision .bg h1, body.team .bg h1 {
+    text-align: left; }
+  body.contact .content {
+    margin-top: 350px; }
+    body.contact .content .container .row .addressblock p {
+      margin: 20px 0;
       text-align: center; }
-    body.home .sidebar .inner {
-      border-left: 0; }
-    body.contact .bg h1, body.portfolio .bg h1, body.portfolio_detail .bg h1, body.vision .bg h1, body.team .bg h1 {
-      text-align: left; }
-    body.contact .content {
-      margin-top: 350px; }
-      body.contact .content .container .row .addressblock p {
-        margin: 20px 0;
-        text-align: center; }
-    body.portfolio h1 {
-      margin-left: 10px; }
-    body.portfolio .portfolio_detail {
-      text-align: center; }
-    body.portfolio_detail section.project_name {
-      margin-top: 10px; }
-    body.portfolio_detail section.project_description {
-      padding: 40px 10px;
-      margin-left: 0;
-      margin-right: 0; }
-    body.portfolio_detail section.realcontent img {
-      margin: 0 !important;
-      padding: 0; }
-    body.portfolio_detail section.realcontent a.navigation {
-      margin: 20px 20px 20px 0; }
+  body.portfolio h1 {
+    margin-left: 10px; }
+  body.portfolio .portfolio_detail {
+    text-align: center; }
+  body.portfolio_detail section.project_name {
+    margin-top: 10px; }
+  body.portfolio_detail section.project_description {
+    padding: 40px 10px;
+    margin-left: 0;
+    margin-right: 0; }
+  body.portfolio_detail section.realcontent img {
+    margin: 0 !important;
+    padding: 0; }
+  body.portfolio_detail section.realcontent a.navigation {
+    margin: 20px 20px 20px 0; }
 
   .navigation.icon-arrow-down, .navigation.icon-arrow-up {
     display: none; }
@@ -509,17 +509,17 @@ footer .social {
 
   .snav {
     position: static;
-    float: left;
-    padding-top: 10px; }
+    float: left; }
     .snav.nav-left, .snav.nav-right {
       margin-left: 0;
       width: 100%; }
     .snav ul {
       padding: 0;
       text-align: center; }
-      .snav ul, .snav ul.unstyled {
+      .snav ul, .snav ul.list-unstyled {
         margin: 0; }
       .snav ul li {
+        padding-top: 10px;
         padding-left: 0;
         width: 50%; }
 
@@ -550,7 +550,7 @@ footer .social {
     footer .pull-right .cursive {
       text-align: left;
       margin-left: 30px; }
-  footer .span6 {
+  footer .col-xs-6 {
     width: 310px;
     margin: 0 auto; }
 
@@ -562,7 +562,7 @@ footer .social {
     line-height: 60px; }
 
   .blog .dateblock {
-    height: 85px; }
+    margin-bottom: 20px; }
   .blog .author {
     clear: none;
     margin: 0; }
@@ -570,13 +570,5 @@ footer .social {
     float: left;
     margin-right: 10px; }
 
-  article.row {
-    margin-left: 10px;
-    margin-right: 10px; }
   article .contentblock {
-    padding-left: 0;
-    border-left: 0; }
-
-  ul.inline > li {
-    padding-left: 0;
-    padding-right: 0; } }
+    border-left: 0; } }

@@ -7,7 +7,7 @@ excerpt: "This is a selection of our latest work."
 <section id="intro" class="bg">
   <div class="container">
     <div class="row">
-      <div class="span3">
+      <div class="col-xs-12 col-md-offset-3 col-md-9">
         <h1>Portfolio</h1>
       </div>
     </div>
@@ -22,14 +22,14 @@ excerpt: "This is a selection of our latest work."
     <div class="row">
       <div class="thumbnails">
         {% for post in site.categories.portfolio %}
-        <div class="span6 portfolio_detail">
+        <div class="col-xs-12 col-md-6 portfolio_detail">
           <div class="row-fluid">
-            <div class="span6">
+            <div class="col-xs-12 col-md-6">
               <a href="{{post.url}}" class="thumbnail">
                 <img src="/img/home/{{post.project_slug}}.png" />
               </a>
             </div>
-            <div class="span6">
+            <div class="col-xs-12 col-md-6">
               <h1>{{post.project_name}}</h1>
               <p>{{post.project_description}}</p>
               <p class="tags">{{post.tags | join: ", " }}</p>

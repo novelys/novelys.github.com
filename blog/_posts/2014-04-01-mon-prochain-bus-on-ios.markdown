@@ -17,7 +17,7 @@ Ever since, I thought it would be nice to have a native counterpart on my phone,
 After a few hours of work scattered over the weeks, the app is finally [live on the App Store](https://itunes.apple.com/ye/app/mon-prochain-bus-a-strasbourg/id840790152?mt=8) and available for everyone. It focuses on one thing only at the moment: showing you the closest stations to you and the next arrivals. No directions, no custom address lookup: those will come, though. One step at a time :)
 
 <div class="row-fluid text-center">
-  <div class="span12">
+  <div class="col-xs-12">
     <img src="/img/blog/mpb_ios.png" alt="Mon Prochain Bus iOS" title="Mon Prochain Bus iOS" />
   </div>
 </div>

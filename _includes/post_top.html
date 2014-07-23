@@ -1,5 +1,5 @@
 <article class="row">
-  <div class="span3 dateblock">
+  <div class="col-xs-12 col-md-3 dateblock">
     <div class="date">
       <div class="day">
         {{ post.date | date: "%d" }}
@@ -23,7 +23,7 @@
       {% endif %}
     </div>
   </div>
-  <div class="span8 contentblock">
+  <div class="col-xs-12 col-md-8 contentblock">
       <h2 class="title">
         <a href="{{ post.url }}">{% if post.categories contains "Portfolio" %}[CASE STUDY] {% endif %}{{ post.title }}</a>
       </h2>
