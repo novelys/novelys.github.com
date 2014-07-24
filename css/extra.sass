@@ -2,7 +2,6 @@ body
   font-family: 'proxima-nova', sans-serif
   font-weight: 300
   background-color: #FAFAFA
-  // font-size: 16px
   margin-top: 40px
 
 section
@@ -121,7 +120,6 @@ body
           margin: 0
           font-weight: 300
   &.blog .trenches
-    margin-bottom: 40px
     .col-xs-4 .cursive
       text-align: right
     .col-xs-8
@@ -130,7 +128,6 @@ body
         text-align: left
   &.contact, &.portfolio, &.vision, &.team
     .content
-      margin-top: 430px
       .container .row .addressblock p
         text-align: right
     .bg h1
@@ -258,9 +255,6 @@ img#logo
   margin: 5px
 
 .bg
-  position: absolute
-  top: 50px
-  left: 0
   width: 100%
   background-image: url("/img/san-francisco-background.jpg")
   background-size: cover
@@ -480,6 +474,7 @@ footer
 
 @media (max-width: 767px)
   body
+    margin-top: 160px
     &.home
       ul.logos
         li
@@ -497,11 +492,11 @@ footer
         .inner
           border-left: 0
     &.contact, &.portfolio, &.portfolio_detail, &.vision, &.team
-      .bg h1
-        text-align: left
+      .bg
+        h1
+          text-align: left
     &.contact
       .content
-        margin-top: 350px
         .container .row .addressblock p
           margin: 20px 0
           text-align: center
@@ -551,9 +546,10 @@ footer
         width: 50%
   body
     &.home .bg, &.contact .bg, &.portfolio .bg, &.portfolio_detail .bg, &.vision .bg, &.team .bg
-      top: 132px
-      height: 351px
-      min-height: 351px
+      height: 150px
+      min-height: 150px
+      h1
+        margin-top: 20px
   #title
     top: 20%
     p.subs

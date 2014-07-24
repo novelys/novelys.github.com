@@ -203,8 +203,6 @@
     var new_height = height - 50 - 100;
     new_height = new_height > 500 ? new_height : 500;
     $(".targetresize").css({height: new_height});
-    var content_pos = $(".targetresize").offset().top + new_height;
-    $(".content").css({marginTop: content_pos});
   }
   $(document).ready(function(event) {
 
