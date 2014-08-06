@@ -18,4 +18,4 @@ The usage is very straigthforward: for each goroutine launched, add one item to 
 
 {% gist ksol/e0424d2721674913c243 %}
 
-I find this approach more elegant and closer to what ember.js is supposed to feel like. However, it was neither trivial nor easy to find, and it took a bit of guess-work to make things work properly. If you ever had this issue with `ember.js`, I'm curious to see if you solved it differently and how!
+I find `go` to be a very good companion to Ruby, having strengths where the latter is known to be weak. What do you think?
