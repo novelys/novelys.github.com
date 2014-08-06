@@ -10,6 +10,12 @@ author: ksol
 ---
 Though we've been Ruby lovers for the past decade here at Novelys, we're always keeping an eye on other languages and ecosystems. We've been playing around with google's `go` here and then, and recently I was trying to achieve something that I was quite used to do in `javascript`: making `n` parallel requests to various apis, then wait for all of them to complete and move on. In a way, it is the opposite topic of a [previous blog post](http://www.novelys.com/blog/2014/07/07/ember-parallel-loading-of-several-resources.html), in which I did *not* wanted to wait for all of the requests to complete before displaying feedback.
 
+<div class="row-fluid text-center">
+  <div class="col-xs-12">
+    <img src="/img/blog/go_concurrent_1.jpg" alt="Golang" title="Golang" />
+  </div>
+</div>
+
 In this case, I simply needed to hit several endpoints and exit. I went with `go` because I knew I would not have my hand on the server where the program would be ran and be able to do a proper ruby install, so a single binary with no dependency was a strong argument in favor of `go`. In the first version of my script-like, things were done sequentially and it was quite slow, between 2 and 5 seconds per request.
 
 Since it's `go` code, it's quite easy to make it parallel by replacing `functioncall(arg1, arg2)` with `go functioncall(arg1, arg2)`, but then the main routine does **not** wait for the go routines to complete and return. What I wanted was something similar to `jQuery.when` or `RSVP.all` for goroutines. I first looked into channels but quickly found that there is a utility in `go`'s standard library that does exactly what I wanted to, `sync.WaitGroup`.
