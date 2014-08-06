@@ -18,4 +18,6 @@ The usage is very straigthforward: for each goroutine launched, add one item to 
 
 {% gist ksol/e0424d2721674913c243 %}
 
+---
+
 I find `go` to be a very good companion to Ruby, having strengths where the latter is known to be weak. What do you think?
