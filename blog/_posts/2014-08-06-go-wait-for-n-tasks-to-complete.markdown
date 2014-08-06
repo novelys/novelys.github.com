@@ -7,6 +7,7 @@ tags: golang parallelism
 body_class: "blog"
 comments: true
 author: ksol
+fb_image_path: "/img/blog/go_concurrent_1.jpg"
 ---
 Though we've been Ruby lovers for the past decade here at Novelys, we're always keeping an eye on other languages and ecosystems. We've been playing around with google's `go` here and then, and recently I was trying to achieve something that I was quite used to do in `javascript`: making `n` parallel requests to various apis, then wait for all of them to complete and move on. In a way, it is the opposite topic of a [previous blog post](http://www.novelys.com/blog/2014/07/07/ember-parallel-loading-of-several-resources.html), in which I did *not* wanted to wait for all of the requests to complete before displaying feedback.
 
