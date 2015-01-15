@@ -69,12 +69,6 @@
           </div>
           <div class="snav nav-right">
             <ul class="list-unstyled">
-              {% if page.url == "/team.html" %}
-                <li class="top-nav-item"><a class="current" href="/team.html">Team & Rates</a></li>
-              {% else %}
-                <li class="top-nav-item"><a href="/team.html">Team & Rates</a></li>
-              {% endif %}
-
               {% assign blogurl = page.url | truncate:5,'' %}
               {% if blogurl == "/blog" %}
                 <li class="top-nav-item"><a class="current" href="/blog/index.html">Blog</a></li>
